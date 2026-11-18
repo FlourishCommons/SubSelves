@@ -1,32 +1,38 @@
 import Link from "next/link";
+import Image from "next/image";
+import { HeroPartConversation } from "@/components/HeroPartConversation";
+import PartsLibraryDemo from "@/components/PartsLibraryDemo";
+import { SponsorButton } from "@/components/SponsorButton";
+import { SponsorWall } from "@/components/SponsorWall";
+import { Footer } from "@/components/Footer";
 
 const features = [
   {
     name: "Parts Library",
     description:
       "A living map of your inner world. Meet the protective, vulnerable, and exiled parts that shape how you respond—each with its own story and needs.",
-    accent: "bg-amber-100 text-amber-800",
+    accent: "bg-periwinkle-tint text-periwinkle-deep",
     icon: LibraryIcon,
   },
   {
     name: "Chat with Parts",
     description:
       "Have a safe, structured dialogue with a part. Move between Self and Part so every voice gets room to be heard without judgment.",
-    accent: "bg-sky-100 text-sky-800",
+    accent: "bg-teal-tint text-teal-deep",
     icon: ChatIcon,
   },
   {
     name: "Save Parts",
     description:
       "Keep the parts you meet, along with reflections and breakthroughs, so your inner work has continuity, memory, and momentum.",
-    accent: "bg-emerald-100 text-emerald-800",
+    accent: "bg-golden-tint text-golden-deep",
     icon: SaveIcon,
   },
   {
     name: "Peace & Harmony",
     description:
       "Build the capacity to hold competing needs with compassion—and turn inherited survival patterns into grounded, conscious choice.",
-    accent: "bg-rose-100 text-rose-800",
+    accent: "bg-apricot-tint text-apricot-deep",
     icon: HarmonyIcon,
   },
 ];
@@ -54,6 +60,12 @@ const quickActions = [
   },
 ];
 
+const principleTints = [
+  "bg-apricot-tint/70",
+  "bg-golden-tint/70",
+  "bg-sage-tint/80",
+];
+
 const principles = [
   {
     title: "Meet your parts",
@@ -74,33 +86,37 @@ const principles = [
 
 export default function Home() {
   return (
-    <div className="flex flex-1 flex-col bg-stone-50 text-stone-900">
+    <div className="flex flex-1 flex-col bg-ivory text-ink">
 
       <main className="flex-1">
         <section className="relative overflow-hidden">
           <div
             aria-hidden="true"
-            className="pointer-events-none absolute -left-24 top-6 h-72 w-72 rounded-full bg-amber-200/40 blur-3xl"
+            className="pointer-events-none absolute -left-24 top-6 h-72 w-72 rounded-full bg-apricot/30 blur-3xl"
           />
           <div
             aria-hidden="true"
-            className="pointer-events-none absolute -right-16 bottom-0 h-80 w-80 rounded-full bg-emerald-200/40 blur-3xl"
+            className="pointer-events-none absolute -right-16 bottom-0 h-80 w-80 rounded-full bg-periwinkle/30 blur-3xl"
+          />
+          <div
+            aria-hidden="true"
+            className="pointer-events-none absolute right-1/3 top-1/2 h-64 w-64 rounded-full bg-golden/35 blur-3xl"
           />
 
           <div className="relative mx-auto grid w-full max-w-6xl gap-14 px-5 py-20 sm:px-8 lg:grid-cols-[1.05fr_0.95fr] lg:items-center lg:py-28">
             <div>
-              <p className="inline-flex items-center gap-2 rounded-full border border-amber-300/70 bg-amber-50 px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.16em] text-amber-800">
-                <span className="h-1.5 w-1.5 rounded-full bg-amber-500" />
+              <p className="inline-flex items-center gap-2 rounded-full border border-teal/25 bg-teal-tint px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.16em] text-teal-deep">
+                <span className="h-1.5 w-1.5 rounded-full bg-teal" />
                 Parts Work for intergenerational healing
               </p>
 
-              <h1 className="mt-6 max-w-2xl text-4xl font-semibold leading-[1.08] tracking-tight sm:text-5xl lg:text-6xl">
+              <h1 className="mt-6 max-w-2xl text-4xl font-semibold leading-[1.08] tracking-tight text-ink sm:text-5xl lg:text-6xl">
                 Break the cycle.
                 <br />
                 Come home to yourself.
               </h1>
 
-              <p className="mt-6 max-w-xl text-lg leading-8 text-stone-600">
+              <p className="mt-6 max-w-xl text-lg leading-8 text-ink/70">
                 InnerHarmony is a gentle, guided space for Parts Work—so you can
                 meet the parts shaped by inherited trauma, listen without
                 judgment, and build a steadier sense of inner peace.
@@ -109,64 +125,43 @@ export default function Home() {
               <div className="mt-9 flex flex-col gap-3 sm:flex-row">
                 <Link
                   href="/check-in"
-                  className="inline-flex h-12 items-center justify-center rounded-full bg-stone-900 px-7 text-sm font-semibold text-stone-50 shadow-sm transition-colors hover:bg-stone-700"
+                  className="inline-flex h-12 items-center justify-center rounded-full bg-teal px-7 text-sm font-semibold text-ivory shadow-sm transition-colors hover:bg-teal-deep"
                 >
                   Start a free check-in
                 </Link>
                 <a
                   href="#parts-work"
-                  className="inline-flex h-12 items-center justify-center rounded-full border border-stone-300 bg-white px-7 text-sm font-semibold text-stone-800 transition-colors hover:border-stone-400 hover:bg-stone-100"
+                  className="inline-flex h-12 items-center justify-center rounded-full border border-teal/30 bg-white px-7 text-sm font-semibold text-teal-deep transition-colors hover:border-teal/50 hover:bg-teal-tint"
                 >
                   Explore Parts Work
                 </a>
               </div>
 
-              <p className="mt-5 text-sm text-stone-500">
+              <p className="mt-5 text-sm text-ink/55">
                 Rooted in Peter Garlach’s research on inner work—no account
                 needed to begin.
               </p>
             </div>
 
             <div className="relative mx-auto w-full max-w-md">
+              <span
+                aria-hidden="true"
+                className="absolute -left-6 top-12 h-20 w-20 rounded-full bg-apricot/80"
+              />
+              <span
+                aria-hidden="true"
+                className="absolute -right-5 top-4 h-12 w-12 rounded-full bg-golden/90"
+              />
+              <span
+                aria-hidden="true"
+                className="absolute -bottom-6 right-10 h-16 w-16 rounded-full bg-periwinkle/70"
+              />
               <div
                 aria-hidden="true"
-                className="absolute inset-0 -rotate-3 rounded-[2rem] bg-gradient-to-br from-amber-200/70 to-emerald-200/70"
+                className="absolute inset-0 -rotate-3 rounded-[2rem] bg-gradient-to-br from-apricot/70 via-golden/60 to-sage/45"
               />
-              <div className="relative rounded-[2rem] border border-white/80 bg-white p-6 shadow-xl shadow-stone-900/5 sm:p-8">
-                <div className="flex items-center justify-between">
-                  <p className="text-xs font-semibold uppercase tracking-[0.18em] text-stone-500">
-                    A conversation with a part
-                  </p>
-                  <span className="rounded-full bg-stone-100 px-2.5 py-1 text-[11px] font-medium text-stone-600">
-                    Preview
-                  </span>
-                </div>
-
-                <div className="mt-6 space-y-4">
-                  <div className="max-w-[85%] rounded-2xl rounded-tl-md bg-sky-50 px-4 py-3 text-sm leading-6 text-sky-950">
-                    <p className="mb-1 text-[11px] font-semibold uppercase tracking-wider text-sky-700">
-                      Part
-                    </p>
-                    I keep bracing for something bad to happen.
-                  </div>
-                  <div className="ml-auto max-w-[85%] rounded-2xl rounded-tr-md bg-amber-50 px-4 py-3 text-sm leading-6 text-amber-950">
-                    <p className="mb-1 text-[11px] font-semibold uppercase tracking-wider text-amber-700">
-                      Self
-                    </p>
-                    I see you. You are trying to keep us safe.
-                  </div>
-                  <div className="max-w-[85%] rounded-2xl rounded-tl-md bg-sky-50 px-4 py-3 text-sm leading-6 text-sky-950">
-                    <p className="mb-1 text-[11px] font-semibold uppercase tracking-wider text-sky-700">
-                      Part
-                    </p>
-                    I did not know I could put it down.
-                  </div>
-                </div>
-
-                <div className="mt-6 flex items-center gap-2 text-xs text-stone-500">
-                  <span className="flex h-2 w-2 rounded-full bg-emerald-500" />
-                  Held with compassion, at your pace
-                </div>
+              <div className="relative rounded-[2rem] border border-ink/10 bg-white p-6 shadow-xl shadow-teal/10 sm:p-8">
+                <HeroPartConversation />
               </div>
             </div>
           </div>
@@ -174,20 +169,20 @@ export default function Home() {
 
         <section
           id="parts-work"
-          className="scroll-mt-20 border-y border-stone-200 bg-white"
+          className="scroll-mt-20 border-y border-ink/10 bg-white"
         >
           <div className="mx-auto w-full max-w-6xl px-5 py-20 sm:px-8 lg:py-24">
             <div className="grid gap-12 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
               <div>
-                <p className="text-xs font-semibold uppercase tracking-[0.2em] text-emerald-700">
+                <p className="text-xs font-semibold uppercase tracking-[0.2em] text-teal-deep">
                   What is Parts Work?
                 </p>
-                <h2 className="mt-4 text-3xl font-semibold leading-tight tracking-tight sm:text-4xl">
+                <h2 className="mt-4 text-3xl font-semibold leading-tight tracking-tight text-ink sm:text-4xl">
                   Healing that honors where you come from.
                 </h2>
               </div>
 
-              <div className="space-y-5 text-base leading-8 text-stone-600">
+              <div className="space-y-5 text-base leading-8 text-ink/70">
                 <p>
                   Parts Work is an approach to inner healing based on Peter
                   Garlach’s research into how trauma—including trauma passed
@@ -208,15 +203,15 @@ export default function Home() {
               {principles.map((principle, index) => (
                 <div
                   key={principle.title}
-                  className="rounded-2xl border border-stone-200 bg-stone-50 p-6"
+                  className={`rounded-2xl border border-ink/10 p-6 ${principleTints[index]}`}
                 >
-                  <span className="flex h-9 w-9 items-center justify-center rounded-full bg-stone-900 text-sm font-semibold text-stone-50">
+                  <span className="flex h-9 w-9 items-center justify-center rounded-full bg-teal text-sm font-semibold text-ivory">
                     {index + 1}
                   </span>
-                  <h3 className="mt-4 text-base font-semibold">
+                  <h3 className="mt-4 text-base font-semibold text-ink">
                     {principle.title}
                   </h3>
-                  <p className="mt-2 text-sm leading-6 text-stone-600">
+                  <p className="mt-2 text-sm leading-6 text-ink/70">
                     {principle.description}
                   </p>
                 </div>
@@ -228,13 +223,13 @@ export default function Home() {
         <section id="features" className="scroll-mt-20">
           <div className="mx-auto w-full max-w-6xl px-5 py-20 sm:px-8 lg:py-24">
             <div className="max-w-2xl">
-              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-amber-700">
+              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-teal-deep">
                 A complete inner practice
               </p>
-              <h2 className="mt-4 text-3xl font-semibold leading-tight tracking-tight sm:text-4xl">
+              <h2 className="mt-4 text-3xl font-semibold leading-tight tracking-tight text-ink sm:text-4xl">
                 Everything you need to meet your parts with care.
               </h2>
-              <p className="mt-4 text-base leading-7 text-stone-600">
+              <p className="mt-4 text-base leading-7 text-ink/70">
                 Simple tools for a deep process—designed to feel safe,
                 unhurried, and genuinely yours.
               </p>
@@ -247,17 +242,17 @@ export default function Home() {
                 return (
                   <article
                     key={feature.name}
-                    className="group rounded-3xl border border-stone-200 bg-white p-6 transition-all hover:-translate-y-1 hover:border-stone-300 hover:shadow-lg hover:shadow-stone-900/5"
+                    className="group rounded-3xl border border-ink/10 bg-white p-6 transition-all hover:-translate-y-1 hover:border-teal/30 hover:shadow-lg hover:shadow-teal/10"
                   >
                     <span
                       className={`flex h-11 w-11 items-center justify-center rounded-2xl ${feature.accent}`}
                     >
                       <Icon />
                     </span>
-                    <h3 className="mt-5 text-lg font-semibold">
+                    <h3 className="mt-5 text-lg font-semibold text-ink">
                       {feature.name}
                     </h3>
-                    <p className="mt-2 text-sm leading-6 text-stone-600">
+                    <p className="mt-2 text-sm leading-6 text-ink/70">
                       {feature.description}
                     </p>
                   </article>
@@ -268,19 +263,61 @@ export default function Home() {
         </section>
 
         <section
+          id="library-demo"
+          className="scroll-mt-20 border-y border-ink/10 bg-white"
+        >
+          <div className="mx-auto w-full max-w-6xl px-5 py-20 sm:px-8 lg:py-24">
+            <div className="grid gap-10 lg:grid-cols-[0.8fr_1.2fr] lg:items-start">
+              <div className="lg:sticky lg:top-24">
+                <p className="text-xs font-semibold uppercase tracking-[0.2em] text-teal-deep">
+                  Inside the Parts Library
+                </p>
+                <h2 className="mt-4 text-3xl font-semibold leading-tight tracking-tight text-ink sm:text-4xl">
+                  Find the voices already living in your system.
+                </h2>
+                <p className="mt-4 text-base leading-7 text-ink/70">
+                  This is a live demo of the library—a curated set of named
+                  parts you can start from. Search it, explore a group, and
+                  make each part your own.
+                </p>
+                <div className="mt-7 flex flex-wrap items-center gap-3">
+                  <Link
+                    href="/parts"
+                    className="inline-flex h-11 items-center justify-center rounded-full bg-teal px-6 text-sm font-semibold text-ivory transition-colors hover:bg-teal-deep"
+                  >
+                    Open your Parts Library
+                  </Link>
+                  <Link
+                    href="/parts/library"
+                    className="inline-flex h-11 items-center justify-center rounded-full border border-teal/30 bg-white px-6 text-sm font-semibold text-teal-deep transition-colors hover:border-teal hover:bg-teal-tint"
+                  >
+                    Browse all artwork
+                  </Link>
+                </div>
+                <p className="mt-4 text-sm text-ink/55">
+                  Try searching for “Critic”, “Worrier”, or “Playful”.
+                </p>
+              </div>
+
+              <PartsLibraryDemo />
+            </div>
+          </div>
+        </section>
+
+        <section
           id="quick-actions"
-          className="scroll-mt-20 border-y border-stone-200 bg-white"
+          className="scroll-mt-20 border-y border-ink/10 bg-white"
         >
           <div className="mx-auto w-full max-w-6xl px-5 py-20 sm:px-8 lg:py-24">
             <div className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
               <div className="max-w-2xl">
-                <p className="text-xs font-semibold uppercase tracking-[0.2em] text-sky-700">
+                <p className="text-xs font-semibold uppercase tracking-[0.2em] text-teal-deep">
                   Your practice, when you need it
                 </p>
-                <h2 className="mt-4 text-3xl font-semibold leading-tight tracking-tight sm:text-4xl">
+                <h2 className="mt-4 text-3xl font-semibold leading-tight tracking-tight text-ink sm:text-4xl">
                   Jump back into the work.
                 </h2>
-                <p className="mt-3 text-base leading-7 text-stone-600">
+                <p className="mt-3 text-base leading-7 text-ink/70">
                   Already practicing? These guided tools are here whenever you
                   want to check in, sit with a part, or reflect on what has
                   moved.
@@ -293,11 +330,11 @@ export default function Home() {
                 <Link
                   key={action.name}
                   href={action.href}
-                  className="group flex flex-col justify-between rounded-2xl border border-stone-200 bg-stone-50 p-5 transition-colors hover:border-stone-900 hover:bg-stone-900 hover:text-stone-50"
+                  className="group flex flex-col justify-between rounded-2xl border border-ink/10 bg-ivory p-5 transition-colors hover:border-teal hover:bg-teal hover:text-ivory"
                 >
                   <div>
                     <h3 className="text-base font-semibold">{action.name}</h3>
-                    <p className="mt-2 text-sm leading-6 text-stone-600 transition-colors group-hover:text-stone-300">
+                    <p className="mt-2 text-sm leading-6 text-ink/70 transition-colors group-hover:text-ivory/85">
                       {action.description}
                     </p>
                   </div>
@@ -311,27 +348,34 @@ export default function Home() {
           </div>
         </section>
 
+        <SponsorWall />
+        <section className="border-y border-ink/10 bg-white">
+          <div className="mx-auto max-w-6xl px-5 py-16 sm:px-8 lg:py-20">
+            <SponsorButton />
+          </div>
+        </section>
+
         <section id="support" className="scroll-mt-20">
           <div className="mx-auto w-full max-w-6xl px-5 py-20 sm:px-8 lg:py-24">
-            <div className="relative overflow-hidden rounded-[2rem] bg-stone-900 px-6 py-14 text-stone-50 sm:px-12 lg:px-16">
+            <div className="relative overflow-hidden rounded-[2rem] bg-teal px-6 py-14 text-ivory sm:px-12 lg:px-16">
               <div
                 aria-hidden="true"
-                className="pointer-events-none absolute -right-20 -top-24 h-72 w-72 rounded-full bg-emerald-400/20 blur-3xl"
+                className="pointer-events-none absolute -right-20 -top-24 h-72 w-72 rounded-full bg-apricot/30 blur-3xl"
               />
               <div
                 aria-hidden="true"
-                className="pointer-events-none absolute -bottom-28 -left-16 h-72 w-72 rounded-full bg-amber-400/20 blur-3xl"
+                className="pointer-events-none absolute -bottom-28 -left-16 h-72 w-72 rounded-full bg-golden/25 blur-3xl"
               />
 
               <div className="relative flex flex-col gap-8 lg:flex-row lg:items-center lg:justify-between">
                 <div className="max-w-2xl">
-                  <p className="text-xs font-semibold uppercase tracking-[0.2em] text-emerald-300">
+                  <p className="text-xs font-semibold uppercase tracking-[0.2em] text-golden-tint">
                     Community supported
                   </p>
                   <h2 className="mt-4 text-3xl font-semibold leading-tight tracking-tight sm:text-4xl">
                     Support our collective
                   </h2>
-                  <p className="mt-4 text-base leading-7 text-stone-300">
+                  <p className="mt-4 text-base leading-7 text-ivory/85">
                     InnerHarmony is built for people doing the quiet,
                     generational work of healing. Your support helps keep these
                     tools accessible and lets us grow them with care.
@@ -340,7 +384,7 @@ export default function Home() {
 
                 <Link
                   href="/donate"
-                  className="inline-flex h-12 shrink-0 items-center justify-center rounded-full bg-amber-300 px-7 text-sm font-semibold text-stone-950 transition-colors hover:bg-amber-200"
+                  className="inline-flex h-12 shrink-0 items-center justify-center rounded-full bg-golden px-7 text-sm font-semibold text-ink transition-colors hover:bg-golden/90"
                 >
                   Support our collective
                 </Link>
@@ -350,49 +394,21 @@ export default function Home() {
         </section>
       </main>
 
-      <footer className="border-t border-stone-200 bg-white">
-        <div className="mx-auto flex w-full max-w-6xl flex-col gap-6 px-5 py-10 sm:px-8 md:flex-row md:items-center md:justify-between">
-          <div>
-            <div className="flex items-center gap-2.5">
-              <BrandMark />
-              <span className="text-base font-semibold tracking-tight">
-                InnerHarmony
-              </span>
-            </div>
-            <p className="mt-3 max-w-md text-sm leading-6 text-stone-600">
-              A gentle space for Parts Work and intergenerational healing.
-            </p>
-          </div>
-
-          <div className="flex flex-col gap-2 text-sm text-stone-500 md:items-end">
-            <Link href="/donate" className="transition-colors hover:text-stone-900">
-              Support our collective
-            </Link>
-            <p>InnerHarmony is not a substitute for therapy or emergency care.</p>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 }
 
 function BrandMark() {
   return (
-    <span className="flex h-9 w-9 items-center justify-center rounded-full bg-gradient-to-br from-amber-300 to-emerald-400">
-      <svg
-        aria-hidden="true"
-        viewBox="0 0 24 24"
-        className="h-5 w-5 text-stone-900"
-        fill="none"
-        stroke="currentColor"
-        strokeWidth={1.6}
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      >
-        <circle cx="12" cy="12" r="7.5" />
-        <circle cx="12" cy="12" r="3.5" />
-        <path d="M12 4.5v3M12 16.5v3M4.5 12h3M16.5 12h3" />
-      </svg>
+    <span className="flex h-9 w-9 items-center justify-center rounded-full">
+      <Image
+        src="/logo.png"
+        alt="InnerHarmony"
+        width={36}
+        height={36}
+        className="h-full w-full rounded-full object-cover"
+      />
     </span>
   );
 }

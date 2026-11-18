@@ -1,0 +1,1901 @@
+{
+  "source": "https://sfhelp.org/gwc/IF/innerfam.htm",
+  "author": "Peter K. Gerlach, MSW",
+  "retrieved": "2026-11-14",
+  "note": "Gerlach's roster of ~112 subselves (some shared across categories). App catalog target: 100 parts. Shared descriptions marked; missing app-part flags where roster diverges.",
+  "parts": [
+    {
+      "id": "mgr-01",
+      "appName": "Achiever / Do-er / Driver",
+      "category": "Manager",
+      "sourceUrl": "https://sfhelp.org/popIF/achiever.htm",
+      "aliases": [
+        "Achiever",
+        "Do-er",
+        "Driver",
+        "Pusher"
+      ],
+      "functionSummary": "Provides motivation and drive to 'get things done now'; fuels productivity and accomplishment in Self-led systems.",
+      "protectiveIntention": "Prevents stagnation, apathy, and purposelessness by maintaining forward momentum.",
+      "distinguishingBehaviors": "In false-self systems becomes overactive (Type A, driven) or suppressed (apathy, boredom, self-indulgence). Distrusts or ignores true Self leadership.",
+      "sharedDescription": false,
+      "missingInApp": false
+    },
+    {
+      "id": "mgr-02",
+      "appName": "Analyzer / Thinker",
+      "category": "Manager",
+      "sourceUrl": "https://sfhelp.org/popIF/analyzer.htm",
+      "aliases": [
+        "Analyzer",
+        "Thinker"
+      ],
+      "functionSummary": "Specializes in analyzing\u2014making sense and meaning of sensory information through logic, evaluation, and synthesis.",
+      "protectiveIntention": "Protects fragile Inner Kids from painful feelings by intellectualizing; may overactivate to avoid emotional awareness.",
+      "distinguishingBehaviors": "Conclusions ignored or distorted by Guardians (Magician, Catastrophizer, Cynic, Idealist, Critic, Pleaser) when false self rules. Overactive Analyzer = 'always in head.' Numb-er may join to block feelings.",
+      "sharedDescription": false,
+      "missingInApp": false,
+      "thumbnail": "/thumbnails/Guiding Voices-Analyzer or Thinker-thumbnail.png"
+    },
+    {
+      "id": "mgr-03",
+      "appName": "Artist / Creative One / Inventor",
+      "category": "Manager",
+      "sourceUrl": "https://sfhelp.org/popIF/artist-creative.htm",
+      "aliases": [
+        "Artist",
+        "Creative One",
+        "Inventor",
+        "Creative",
+        "Musical",
+        "Poetic",
+        "Author",
+        "Sculptor",
+        "Decorator",
+        "Chef",
+        "Designer"
+      ],
+      "functionSummary": "Expresses creativity, imagination, and artistic talent; generates novel ideas free from adult logic constraints.",
+      "protectiveIntention": "Provides outlet for self-expression and innovation; counters shame-based discounting of creative gifts.",
+      "distinguishingBehaviors": "Shame-based people discount innate talents ('I can't write'). Also appears as Creative Child / Artist / Inventor in Inner Children (shared description).",
+      "sharedDescription": true,
+      "sharedWith": [
+        "kid-05"
+      ],
+      "missingInApp": false
+    },
+    {
+      "id": "mgr-04",
+      "appName": "Far Seer / Visioner",
+      "category": "Manager",
+      "sourceUrl": "https://sfhelp.org/popIF/far_seer.htm",
+      "aliases": [
+        "Far Seer",
+        "Visioner",
+        "Visionary"
+      ],
+      "functionSummary": "Envisions long-range possibilities and future trajectories; provides strategic foresight.",
+      "protectiveIntention": "Guards against short-sighted decisions; prepares system for future challenges.",
+      "distinguishingBehaviors": "No individual description page found; listed only on roster. Flag for verification.",
+      "sharedDescription": false,
+      "missingInApp": false
+    },
+    {
+      "id": "mgr-05",
+      "appName": "Healer / Health Director",
+      "category": "Manager",
+      "sourceUrl": "https://sfhelp.org/popIF/health_director.htm",
+      "aliases": [
+        "Healer",
+        "Health Director",
+        "Health Director / Healer"
+      ],
+      "functionSummary": "Promotes healthy diet, balanced work/play/exercise/rest, and appropriate preventive/curative care; coordinates wholistic wellbeing.",
+      "protectiveIntention": "Prevents self-neglect and health deterioration; counters hypochondria driven by Catastrophizer/Worrier/Pessimist/Scared Child.",
+      "distinguishingBehaviors": "Paralyzed or ignored in false-self systems (chronic self-neglect). Teams with True Self, Practical Adult, Nurturer, Spiritual One for recovery. Partners with Nurturer/Humanist for others' health.",
+      "sharedDescription": false,
+      "missingInApp": false
+    },
+    {
+      "id": "mgr-06",
+      "appName": "Historian / Memory-manager",
+      "category": "Manager",
+      "sourceUrl": "https://sfhelp.org/popIF/historian.htm",
+      "aliases": [
+        "Historian",
+        "Memory-manager",
+        "Memory Manager"
+      ],
+      "functionSummary": "Specializes in retrieving historical information like an internal librarian; stores and retrieves memories for other subselves.",
+      "protectiveIntention": "Preserves learning from past experiences; protects Inner Kids from painful memories via distortion (Magician), numbing (Anesthetist/Analyzer), or repression (Blocker).",
+      "distinguishingBehaviors": "Observer passes data to Historian. Critic, Perfectionist, Guilty/Shamed Kids, Analyzer, Moralizer, Adult process data for decisions. Magician distorts to protect; Anesthetist/Analyzer numb emotions; Blocker prevents risky memories.",
+      "sharedDescription": false,
+      "missingInApp": false
+    },
+    {
+      "id": "mgr-07",
+      "appName": "Humanitarian",
+      "category": "Manager",
+      "sourceUrl": "https://sfhelp.org/popIF/humanitarian.htm",
+      "aliases": [
+        "Humanitarian",
+        "Humanist"
+      ],
+      "functionSummary": "Motivates concern for welfare of others and living things; extends nurturance beyond self.",
+      "protectiveIntention": "Counters isolation and self-absorption; fosters connection and contribution.",
+      "distinguishingBehaviors": "No individual description page found; listed only on roster. Flag for verification.",
+      "sharedDescription": false,
+      "missingInApp": false
+    },
+    {
+      "id": "mgr-08",
+      "appName": "Learner / Student",
+      "category": "Manager",
+      "sourceUrl": "https://sfhelp.org/popIF/learner.htm",
+      "aliases": [
+        "Learner",
+        "Student"
+      ],
+      "functionSummary": "Drives acquisition of knowledge and skills; maintains curiosity and growth orientation.",
+      "protectiveIntention": "Prevents stagnation and rigidity; supports adaptation through learning.",
+      "distinguishingBehaviors": "No individual description page found; listed only on roster. Flag for verification.",
+      "sharedDescription": false,
+      "missingInApp": false
+    },
+    {
+      "id": "mgr-09",
+      "appName": "Moralizer / Rule Keeper",
+      "category": "Manager",
+      "sourceUrl": "https://sfhelp.org/popIF/moralizer.htm",
+      "aliases": [
+        "Moralizer",
+        "Rule Keeper"
+      ],
+      "functionSummary": "Enforces internalized moral standards and rules; evaluates behavior against ethical frameworks.",
+      "protectiveIntention": "Protects from guilt, shame, and social rejection by maintaining 'correct' behavior.",
+      "distinguishingBehaviors": "Processes Historian's data for decisions. Can become rigid and punitive when false self rules.",
+      "sharedDescription": false,
+      "missingInApp": false
+    },
+    {
+      "id": "mgr-10",
+      "appName": "Nurturer(s) / Loving Parent",
+      "category": "Manager",
+      "sourceUrl": "https://sfhelp.org/popIF/nurturer.htm",
+      "aliases": [
+        "Nurturer",
+        "Nurturers",
+        "Loving Parent",
+        "Loving Mom",
+        "Loving Dad"
+      ],
+      "functionSummary": "Instinctively motivated to love and nourish self and others; promotes health, growth, and wellbeing in living things.",
+      "protectiveIntention": "Counters self-neglect and self-abuse from Shamed/Guilty Children and their Guardians; prevents Reactive Attachment Disorder.",
+      "distinguishingBehaviors": "In healthy systems cares for self and others equally. In wounded systems: undeveloped/overwhelmed \u2192 cannot form genuine bonds, failed relationships, unavailable parenting, social isolation. Recovery requires introducing Nurturer to Inner Kids who don't know/trust it.",
+      "sharedDescription": false,
+      "missingInApp": false,
+      "thumbnail": "/thumbnails/Guiding Voices-Nurturer or Loving Parent-thumbnail.png"
+    },
+    {
+      "id": "mgr-11",
+      "appName": "Observer / Reporter",
+      "category": "Manager",
+      "sourceUrl": "https://sfhelp.org/popIF/observer.htm",
+      "aliases": [
+        "Observer",
+        "Reporter",
+        "Witness"
+      ],
+      "functionSummary": "Notes inner/outer events calmly, factually, objectively without bias; akin to scientist or media reporter. Meditation quiets other subselves to access Observer.",
+      "protectiveIntention": "Provides accurate data for wise decisions; prevents flooding (too much info) or deprivation (too little). Guards young subselves from perceived dangers (scorn, rejection, criticism, intrusion, loss, abandonment).",
+      "distinguishingBehaviors": "Passes observations to Historian for storage. Analyzer, Perfectionist, Pleaser, Critic use reports. True Self uses Observer + other Managers for decisions. Balanced awareness = observing 'enough.'",
+      "sharedDescription": false,
+      "missingInApp": false,
+      "thumbnail": "/thumbnails/Guiding Voices-Observer or Reporter-thumbnail.png"
+    },
+    {
+      "id": "mgr-12",
+      "appName": "Pace-setter / Balancer",
+      "category": "Manager",
+      "sourceUrl": "https://sfhelp.org/popIF/pace_setter.htm",
+      "aliases": [
+        "Pace-setter",
+        "Balancer",
+        "Pace Setter"
+      ],
+      "functionSummary": "Regulates tempo of activity and rest; maintains sustainable rhythm across subselves.",
+      "protectiveIntention": "Prevents burnout from overdrive and stagnation from underdrive.",
+      "distinguishingBehaviors": "No individual description page found; listed only on roster. Flag for verification.",
+      "sharedDescription": false,
+      "missingInApp": false
+    },
+    {
+      "id": "mgr-13",
+      "appName": "Philosopher",
+      "category": "Manager",
+      "sourceUrl": "https://sfhelp.org/popIF/philosopher.htm",
+      "aliases": [
+        "Philosopher"
+      ],
+      "functionSummary": "Seeks meaning, purpose, and understanding of life's fundamental questions; integrates experience into coherent worldview.",
+      "protectiveIntention": "Counters existential anxiety and nihilism; provides framework for values-based decisions.",
+      "distinguishingBehaviors": "No individual description page found; listed only on roster. Flag for verification.",
+      "sharedDescription": false,
+      "missingInApp": false
+    },
+    {
+      "id": "mgr-14",
+      "appName": "Planner / Organizer",
+      "category": "Manager",
+      "sourceUrl": "https://sfhelp.org/popIF/organizer_planner.htm",
+      "aliases": [
+        "Planner",
+        "Organizer",
+        "Organizer / Planner"
+      ],
+      "functionSummary": "Prioritizes and arranges physical/abstract things in useful order; devises and executes effective plans for short/long-term goals.",
+      "protectiveIntention": "Prevents chaos and missed opportunities; distinct from rigid Guardian compulsivity about neatness.",
+      "distinguishingBehaviors": "Works with Adult + Analyzer + Achiever + True Self. Overcome by Lost Child, Scared Child, Catastrophizer, Worrier, Cynic when false self disables Managers. 'Disorganized' often means false-self control.",
+      "sharedDescription": false,
+      "missingInApp": false
+    },
+    {
+      "id": "mgr-15",
+      "appName": "Practical Adult",
+      "category": "Manager",
+      "sourceUrl": "https://sfhelp.org/popIF/adult.htm",
+      "aliases": [
+        "Practical Adult",
+        "Common Sense",
+        "Adult"
+      ],
+      "functionSummary": "Applies pragmatic, grounded common sense to daily decisions; balances idealism with feasibility.",
+      "protectiveIntention": "Prevents impulsive or unrealistic choices; grounds system in reality.",
+      "distinguishingBehaviors": "Partners with Organizer, Analyzer, Achiever, True Self for effective planning. No individual description page found; listed only on roster. Flag for verification.",
+      "sharedDescription": false,
+      "missingInApp": false
+    },
+    {
+      "id": "mgr-16",
+      "appName": "Prioritizer",
+      "category": "Manager",
+      "sourceUrl": "https://sfhelp.org/popIF/prioritizer.htm",
+      "aliases": [
+        "Prioritizer"
+      ],
+      "functionSummary": "Ranks tasks, values, and goals by importance; allocates energy and attention accordingly.",
+      "protectiveIntention": "Prevents overwhelm and misallocation of resources; ensures vital needs met first.",
+      "distinguishingBehaviors": "No individual description page found; listed only on roster. Flag for verification.",
+      "sharedDescription": false,
+      "missingInApp": false
+    },
+    {
+      "id": "mgr-17",
+      "appName": "Professor / Teacher",
+      "category": "Manager",
+      "sourceUrl": "https://sfhelp.org/popIF/professor.htm",
+      "aliases": [
+        "Professor",
+        "Teacher"
+      ],
+      "functionSummary": "Synthesizes and transmits knowledge; mentors other subselves and external others.",
+      "protectiveIntention": "Counters ignorance and confusion; empowers through understanding.",
+      "distinguishingBehaviors": "No individual description page found; listed only on roster. Flag for verification.",
+      "sharedDescription": false,
+      "missingInApp": false
+    },
+    {
+      "id": "mgr-18",
+      "appName": "Socializer / Humanist",
+      "category": "Manager",
+      "sourceUrl": "https://sfhelp.org/popIF/socializer.htm",
+      "aliases": [
+        "Socializer",
+        "Humanist"
+      ],
+      "functionSummary": "Facilitates connection, communication, and rapport with others; values interpersonal harmony.",
+      "protectiveIntention": "Prevents isolation and social alienation; builds support networks.",
+      "distinguishingBehaviors": "No individual description page found; listed only on roster. Flag for verification.",
+      "sharedDescription": false,
+      "missingInApp": false
+    },
+    {
+      "id": "mgr-19",
+      "appName": "Spiritual One",
+      "category": "Manager",
+      "sourceUrl": "https://sfhelp.org/popIF/spiritual1.htm",
+      "aliases": [
+        "Spiritual One",
+        "Higher-Power liaison"
+      ],
+      "functionSummary": "Connects to Higher Power or spiritual dimension; provides transcendent perspective and guidance.",
+      "protectiveIntention": "Counters hopelessness and meaninglessness; offers source of wisdom beyond ego.",
+      "distinguishingBehaviors": "Teams with True Self, Nurturer, Health Director for recovery. No individual description page found; listed only on roster. Flag for verification.",
+      "sharedDescription": false,
+      "missingInApp": false
+    },
+    {
+      "id": "mgr-20",
+      "appName": "Survivor",
+      "category": "Manager",
+      "sourceUrl": "https://sfhelp.org/popIF/survivor.htm",
+      "aliases": [
+        "Survivor"
+      ],
+      "functionSummary": "Embodies resilience and endurance; ensures continuity through adversity.",
+      "protectiveIntention": "Guarantees survival at all costs; maintains life force under threat.",
+      "distinguishingBehaviors": "No individual description page found; listed only on roster. Flag for verification.",
+      "sharedDescription": false,
+      "missingInApp": false
+    },
+    {
+      "id": "mgr-21",
+      "appName": "(True) Self / Leader / Coach / CEO",
+      "category": "Manager",
+      "sourceUrl": "https://sfhelp.org/popIF/selves.htm",
+      "aliases": [
+        "True Self",
+        "Self",
+        "Leader",
+        "Coach",
+        "CEO",
+        "Self / Leader / Coach / CEO"
+      ],
+      "functionSummary": "Natural talent for effective inner-family leadership; guides all subselves with wisdom, compassion, and clarity.",
+      "protectiveIntention": "Harmonizes entire system; prevents any single subself from dominating destructively.",
+      "distinguishingBehaviors": "Capital 'S' Self vs. small 's' self (all subselves + soul/spirit + body). Can be blocked/disabled by distrustful subselves (blending). Lesson 1 aim: free Self to guide. When Self leads, Analyzer's conclusions valued, Organizer plans effectively, Critic moderates, etc.",
+      "sharedDescription": false,
+      "missingInApp": false
+    },
+    {
+      "id": "mgr-22",
+      "appName": "Wise One / Sage / Crone",
+      "category": "Manager",
+      "sourceUrl": "https://sfhelp.org/popIF/wise1.htm",
+      "aliases": [
+        "Wise One",
+        "Sage",
+        "Crone",
+        "Wise One / Sage / Crone"
+      ],
+      "functionSummary": "Embodies accumulated wisdom, discernment, and long-view perspective; mentors from experience.",
+      "protectiveIntention": "Prevents repetition of past errors; provides calibrated judgment.",
+      "distinguishingBehaviors": "No individual description page found; listed only on roster. Flag for verification.",
+      "sharedDescription": false,
+      "missingInApp": false
+    },
+    {
+      "id": "kid-01",
+      "appName": "Abandoned Child",
+      "category": "Inner Child",
+      "sourceUrl": "https://sfhelp.org/popIF/abandoned_child.htm",
+      "aliases": [
+        "Abandoned Child"
+      ],
+      "functionSummary": "Carries primal terror of being left alone; feels unworthy of connection.",
+      "protectiveIntention": "Signals desperate need for attachment; drives clinging or preemptive withdrawal.",
+      "distinguishingBehaviors": "Core wound: 'I will be left.' Guardian protectors activate to prevent re-experiencing abandonment.",
+      "sharedDescription": false,
+      "missingInApp": false,
+      "thumbnail": "/thumbnails/Young Voices-Abandoned Child-thumbnail.png"
+    },
+    {
+      "id": "kid-02",
+      "appName": "Anxious / Scared / Worried Child",
+      "category": "Inner Child",
+      "sourceUrl": "https://sfhelp.org/popIF/scared_child.htm",
+      "aliases": [
+        "Anxious Child",
+        "Scared Child",
+        "Worried Child"
+      ],
+      "functionSummary": "Anticipates danger and catastrophe; hypervigilant to threat cues.",
+      "protectiveIntention": "Warns system of perceived dangers; mobilizes Guardians for protection.",
+      "distinguishingBehaviors": "Triggers Catastrophizer, Worrier, Pessimist, Numb-er. Overactive Analyzer tries to protect this Child from painful feelings. 'Alex is always in his head.'",
+      "sharedDescription": false,
+      "missingInApp": false
+    },
+    {
+      "id": "kid-03",
+      "appName": "Awed / Amazed Child",
+      "category": "Inner Child",
+      "sourceUrl": "https://sfhelp.org/popIF/awed_child.htm",
+      "aliases": [
+        "Awed Child",
+        "Amazed Child",
+        "Awed / Amazed Child"
+      ],
+      "functionSummary": "Experiences wonder, reverence, and openness to mystery; unguarded appreciation of beauty.",
+      "protectiveIntention": "Preserves capacity for joy and transcendence; counters cynicism.",
+      "distinguishingBehaviors": "No individual description page found; listed only on roster. Flag for verification.",
+      "sharedDescription": false,
+      "missingInApp": false
+    },
+    {
+      "id": "kid-04",
+      "appName": "Bored Child",
+      "category": "Inner Child",
+      "sourceUrl": "https://sfhelp.org/popIF/bored_child.htm",
+      "aliases": [
+        "Bored Child"
+      ],
+      "functionSummary": "Feels listless, unstimulated, and empty; craves novelty and engagement.",
+      "protectiveIntention": "Signals need for growth, play, or meaning; prevents stagnation.",
+      "distinguishingBehaviors": "No individual description page found; listed only on roster. Flag for verification.",
+      "sharedDescription": false,
+      "missingInApp": false
+    },
+    {
+      "id": "kid-05",
+      "appName": "Creative Child / Artist / Inventor",
+      "category": "Inner Child",
+      "sourceUrl": "https://sfhelp.org/popIF/artist-creative.htm",
+      "aliases": [
+        "Creative Child",
+        "Artist Child",
+        "Inventor Child",
+        "Creative Child / Artist / Inventor"
+      ],
+      "functionSummary": "Generates novel ideas and expressions free from adult logic; instinctive creativity and imagination.",
+      "protectiveIntention": "Provides safe outlet for feelings; counters rigidity and control.",
+      "distinguishingBehaviors": "Shared description with Manager Artist/Creative One/Inventor (same URL). Free from adult constraints ('logic'). May be Curious Inner Child ally.",
+      "sharedDescription": true,
+      "sharedWith": [
+        "mgr-03"
+      ],
+      "missingInApp": false
+    },
+    {
+      "id": "kid-06",
+      "appName": "Curious Child / Explorer",
+      "category": "Inner Child",
+      "sourceUrl": "https://sfhelp.org/popIF/curious_child.htm",
+      "aliases": [
+        "Curious Child",
+        "Explorer",
+        "Explorer Child"
+      ],
+      "functionSummary": "Driven to investigate, discover, and understand; approaches world with open inquiry.",
+      "protectiveIntention": "Expands system's repertoire; counters fear-based avoidance.",
+      "distinguishingBehaviors": "No individual description page found; listed only on roster. Flag for verification.",
+      "sharedDescription": false,
+      "missingInApp": false,
+      "thumbnail": "/thumbnails/Young Voices-Curious Child or Explorer-thumbnail.png"
+    },
+    {
+      "id": "kid-07",
+      "appName": "Defiant / Stubborn / Rebel",
+      "category": "Inner Child",
+      "sourceUrl": "https://sfhelp.org/popIF/rebel.htm",
+      "aliases": [
+        "Defiant Child",
+        "Stubborn Child",
+        "Rebel Child",
+        "Defiant / Stubborn / Rebel"
+      ],
+      "functionSummary": "Resists control, demands autonomy; asserts 'no' against perceived oppression.",
+      "protectiveIntention": "Protects sovereignty and dignity; prevents enmeshment and coercion.",
+      "distinguishingBehaviors": "Also appears as Rebel / Defiant One / Rule Breaker in Guardians (shared URL). Guardian version more extreme/rigid.",
+      "sharedDescription": true,
+      "sharedWith": [
+        "grd-44"
+      ],
+      "missingInApp": false
+    },
+    {
+      "id": "kid-08",
+      "appName": "Delighted / Excited Child",
+      "category": "Inner Child",
+      "sourceUrl": "https://sfhelp.org/popIF/delighted_child.htm",
+      "aliases": [
+        "Delighted Child",
+        "Excited Child",
+        "Delighted / Excited Child"
+      ],
+      "functionSummary": "Experiences unrestrained joy, enthusiasm, and anticipation; fully present in positive moments.",
+      "protectiveIntention": "Sustains vitality and hope; counters depression and numbness.",
+      "distinguishingBehaviors": "No individual description page found; listed only on roster. Flag for verification.",
+      "sharedDescription": false,
+      "missingInApp": false
+    },
+    {
+      "id": "kid-09",
+      "appName": "Entertainer / Performer / Star",
+      "category": "Inner Child",
+      "sourceUrl": "https://sfhelp.org/popIF/entertainer.htm",
+      "aliases": [
+        "Entertainer Child",
+        "Performer Child",
+        "Star Child",
+        "Entertainer / Performer / Star"
+      ],
+      "functionSummary": "Seeks attention and validation through performance, humor, and charisma; 'Look at me!'",
+      "protectiveIntention": "Counters invisibility and worthlessness; secures love through delighting others.",
+      "distinguishingBehaviors": "Also appears as Entertainer / Clown / Joker in Guardians (shared URL). Guardian version more defensive/manipulative. Marked * = may be Guardian subself.",
+      "sharedDescription": true,
+      "sharedWith": [
+        "grd-15"
+      ],
+      "missingInApp": false
+    },
+    {
+      "id": "kid-10",
+      "appName": "Fantasizer / Dreamer / Mystic",
+      "category": "Inner Child",
+      "sourceUrl": "https://sfhelp.org/popIF/fantasizer.htm",
+      "aliases": [
+        "Fantasizer Child",
+        "Dreamer Child",
+        "Mystic Child",
+        "Fantasizer / Dreamer / Mystic"
+      ],
+      "functionSummary": "Escapes into imagination, daydreams, and mystical realms; creates alternative realities.",
+      "protectiveIntention": "Buffers unbearable reality; preserves hope and possibility.",
+      "distinguishingBehaviors": "Also appears as Fantasizer / Dreamer in Guardians (shared URL). Guardian version more dissociative/denial-based. Marked * = may be Guardian subself.",
+      "sharedDescription": true,
+      "sharedWith": [
+        "grd-18"
+      ],
+      "missingInApp": false
+    },
+    {
+      "id": "kid-11",
+      "appName": "Fetus / Infant",
+      "category": "Inner Child",
+      "sourceUrl": "https://sfhelp.org/popIF/fetus_infant.htm",
+      "aliases": [
+        "Fetus",
+        "Infant",
+        "Fetus / Infant",
+        "Primal Child"
+      ],
+      "functionSummary": "Generates primal pre-verbal feelings; holds earliest somatic imprints (terror, need, rage, bliss).",
+      "protectiveIntention": "Signals foundational unmet needs; demands primal care.",
+      "distinguishingBehaviors": "Pre-verbal, somatic. Source of raw feeling states that older parts manage.",
+      "sharedDescription": false,
+      "missingInApp": false
+    },
+    {
+      "id": "kid-12",
+      "appName": "Friendly / Happy Child",
+      "category": "Inner Child",
+      "sourceUrl": "https://sfhelp.org/popIF/friendly_child.htm",
+      "aliases": [
+        "Friendly Child",
+        "Happy Child",
+        "Friendly / Happy Child"
+      ],
+      "functionSummary": "Naturally sociable, content, and open; enjoys connection without agenda.",
+      "protectiveIntention": "Models healthy attachment; reinforces safety in relationships.",
+      "distinguishingBehaviors": "No individual description page found; listed only on roster. Flag for verification.",
+      "sharedDescription": false,
+      "missingInApp": false
+    },
+    {
+      "id": "kid-13",
+      "appName": "Frustrated / Impatient Child",
+      "category": "Inner Child",
+      "sourceUrl": "https://sfhelp.org/popIF/frustrated_child.htm",
+      "aliases": [
+        "Frustrated Child",
+        "Impatient Child",
+        "Frustrated / Impatient Child"
+      ],
+      "functionSummary": "Intolerant of delay, obstacles, and unmet wants; demands immediate gratification.",
+      "protectiveIntention": "Signals urgent unmet needs; pushes for action.",
+      "distinguishingBehaviors": "No individual description page found; listed only on roster. Flag for verification.",
+      "sharedDescription": false,
+      "missingInApp": false
+    },
+    {
+      "id": "kid-14",
+      "appName": "Good / Dutiful / Obedient Child",
+      "category": "Inner Child",
+      "sourceUrl": "https://sfhelp.org/popIF/good_child.htm",
+      "aliases": [
+        "Good Child",
+        "Dutiful Child",
+        "Obedient Child",
+        "Good / Dutiful / Obedient Child"
+      ],
+      "functionSummary": "Earns love through compliance, perfection, and self-sacrifice; suppresses own needs.",
+      "protectiveIntention": "Prevents rejection and punishment by being 'good enough.'",
+      "distinguishingBehaviors": "Allies with Perfectionist, Pleaser Guardians. Suppresses authenticity for safety.",
+      "sharedDescription": false,
+      "missingInApp": false
+    },
+    {
+      "id": "kid-15",
+      "appName": "Guilty Child",
+      "category": "Inner Child",
+      "sourceUrl": "https://sfhelp.org/popIF/guilty_child.htm",
+      "aliases": [
+        "Guilty Child"
+      ],
+      "functionSummary": "Carries pervasive sense of wrongness; believes 'I am bad' for existing, feeling, or wanting.",
+      "protectiveIntention": "Pre-empts external blame by self-condemning first; maintains attachment via self-blame.",
+      "distinguishingBehaviors": "Processes Historian's data for self-punishment. Hinders Nurturer's self-care. Allies with Shamed Child and Critic.",
+      "sharedDescription": false,
+      "missingInApp": false
+    },
+    {
+      "id": "kid-16",
+      "appName": "Helpless Child / Victim",
+      "category": "Inner Child",
+      "sourceUrl": "https://sfhelp.org/popIF/victim_martyr.htm",
+      "aliases": [
+        "Helpless Child",
+        "Victim Child",
+        "Helpless Child / Victim"
+      ],
+      "functionSummary": "Feels powerless, incapable, and at mercy of circumstances; expects rescue.",
+      "protectiveIntention": "Avoids responsibility and failure by claiming incompetence; elicits care from others.",
+      "distinguishingBehaviors": "Also appears as Victim / Martyr / Loser in Guardians (shared URL). Guardian version more entrenched/identity-based.",
+      "sharedDescription": true,
+      "sharedWith": [
+        "grd-54"
+      ],
+      "missingInApp": false
+    },
+    {
+      "id": "kid-17",
+      "appName": "Hurt / Resentful Child",
+      "category": "Inner Child",
+      "sourceUrl": "https://sfhelp.org/popIF/hurt_resentful_child.htm",
+      "aliases": [
+        "Hurt Child",
+        "Resentful Child",
+        "Hurt / Resentful Child"
+      ],
+      "functionSummary": "Holds grievances, betrayals, and emotional wounds; 'You hurt me and I won't forget.'",
+      "protectiveIntention": "Guards against re-injury by maintaining defensive wall; demands acknowledgment.",
+      "distinguishingBehaviors": "No individual description page found; listed only on roster. Flag for verification.",
+      "sharedDescription": false,
+      "missingInApp": false
+    },
+    {
+      "id": "kid-18",
+      "appName": "Hyper Child",
+      "category": "Inner Child",
+      "sourceUrl": "https://sfhelp.org/popIF/hyper_child.htm",
+      "aliases": [
+        "Hyper Child",
+        "Hyperactive Child"
+      ],
+      "functionSummary": "Excessive energy, impulsivity, and difficulty settling; 'NEW' per Gerlach roster.",
+      "protectiveIntention": "Discharges overwhelming arousal; distracts from painful feelings via motion.",
+      "distinguishingBehaviors": "Marked NEW on roster. May overlap with Impatient / Hyper One Guardian.",
+      "sharedDescription": false,
+      "missingInApp": false
+    },
+    {
+      "id": "kid-19",
+      "appName": "Innocent / Naive (Trusting) Child",
+      "category": "Inner Child",
+      "sourceUrl": "https://sfhelp.org/popIF/naive_child.htm",
+      "aliases": [
+        "Innocent Child",
+        "Naive Child",
+        "Trusting Child",
+        "Innocent / Naive (Trusting) Child"
+      ],
+      "functionSummary": "Approaches world with openness and trust; lacks defensive cynicism.",
+      "protectiveIntention": "Preserves capacity for genuine connection; counters paranoia.",
+      "distinguishingBehaviors": "Vulnerable to exploitation; Guardians (Skeptic, Cynic) protect this Child.",
+      "sharedDescription": false,
+      "missingInApp": false
+    },
+    {
+      "id": "kid-20",
+      "appName": "Joker / Clown / Trickster / Imp",
+      "category": "Inner Child",
+      "sourceUrl": "https://sfhelp.org/popIF/entertainer.htm",
+      "aliases": [
+        "Joker Child",
+        "Clown Child",
+        "Trickster Child",
+        "Imp Child",
+        "Joker / Clown / Trickster / Imp"
+      ],
+      "functionSummary": "Uses humor, mischief, and absurdity to deflect tension and gain attention.",
+      "protectiveIntention": "Diffuses conflict through laughter; hides vulnerability behind antics.",
+      "distinguishingBehaviors": "Shared URL with Entertainer/Performer/Star (kid-09) and Guardian Entertainer/Clown/Joker (grd-15). Marked * = may be Guardian subself.",
+      "sharedDescription": true,
+      "sharedWith": [
+        "kid-09",
+        "grd-15"
+      ],
+      "missingInApp": false
+    },
+    {
+      "id": "kid-21",
+      "appName": "Lost / Orphan Child",
+      "category": "Inner Child",
+      "sourceUrl": "https://sfhelp.org/popIF/lost_child.htm",
+      "aliases": [
+        "Lost Child",
+        "Orphan Child",
+        "Lost / Orphan Child"
+      ],
+      "functionSummary": "Feels unseen, unknown, and without belonging; 'No one knows I'm here.'",
+      "protectiveIntention": "Avoids further invisibility by hiding; paradoxically ensures not being seen.",
+      "distinguishingBehaviors": "Overcomes Organizer/Planner's talent. Allies with Scared Child, Catastrophizer, Worrier, Cynic to disable Managers.",
+      "sharedDescription": false,
+      "missingInApp": false
+    },
+    {
+      "id": "kid-22",
+      "appName": "Loving / Loyal Child",
+      "category": "Inner Child",
+      "sourceUrl": "https://sfhelp.org/popIF/loving_child.htm",
+      "aliases": [
+        "Loving Child",
+        "Loyal Child",
+        "Loving / Loyal Child"
+      ],
+      "functionSummary": "Offers unconditional affection and devotion; seeks reciprocal bond.",
+      "protectiveIntention": "Secures attachment through giving love; models healthy relating.",
+      "distinguishingBehaviors": "No individual description page found; listed only on roster. Flag for verification.",
+      "sharedDescription": false,
+      "missingInApp": false
+    },
+    {
+      "id": "kid-23",
+      "appName": "Lonely / Needy Child",
+      "category": "Inner Child",
+      "sourceUrl": "https://sfhelp.org/popIF/needy_child.htm",
+      "aliases": [
+        "Lonely Child",
+        "Needy Child",
+        "Lonely / Needy Child"
+      ],
+      "functionSummary": "Aches for connection and attention; feels empty without others' presence.",
+      "protectiveIntention": "Signals deprivation; drives proximity-seeking behaviors.",
+      "distinguishingBehaviors": "No individual description page found; listed only on roster. Flag for verification.",
+      "sharedDescription": false,
+      "missingInApp": false
+    },
+    {
+      "id": "kid-24",
+      "appName": "Overwhelmed / Paralyzed Child",
+      "category": "Inner Child",
+      "sourceUrl": "https://sfhelp.org/popIF/overwhelmed.htm",
+      "aliases": [
+        "Overwhelmed Child",
+        "Paralyzed Child",
+        "Overwhelmed / Paralyzed Child"
+      ],
+      "functionSummary": "Freezes under excessive demand or stimulation; 'I can't handle this.' Marked NEW.",
+      "protectiveIntention": "Shuts down to prevent total system collapse; conserves energy.",
+      "distinguishingBehaviors": "Marked NEW on roster. Triggers Guardian Anesthetist/Numb-er, Blocker.",
+      "sharedDescription": false,
+      "missingInApp": false
+    },
+    {
+      "id": "kid-25",
+      "appName": "Rageful / Aggressive Child",
+      "category": "Inner Child",
+      "sourceUrl": "https://sfhelp.org/popIF/rageful_child.htm",
+      "aliases": [
+        "Rageful Child",
+        "Aggressive Child",
+        "Rageful / Aggressive Child"
+      ],
+      "functionSummary": "Expresses raw fury and destructive impulses; 'I'll destroy what hurts me.'",
+      "protectiveIntention": "Deters threat through intimidation; releases trapped survival energy.",
+      "distinguishingBehaviors": "Also appears as Rager in Guardians (shared URL, noted 'may be an inner child'). Guardian version more calculated/weaponized.",
+      "sharedDescription": true,
+      "sharedWith": [
+        "grd-42"
+      ],
+      "missingInApp": false
+    },
+    {
+      "id": "kid-26",
+      "appName": "Responsible Child / Little Adult",
+      "category": "Inner Child",
+      "sourceUrl": "https://sfhelp.org/popIF/ltl_adult.htm",
+      "aliases": [
+        "Responsible Child",
+        "Little Adult",
+        "Responsible Child / Little Adult",
+        "Parentified Child"
+      ],
+      "functionSummary": "Prematurely takes on adult roles, cares for others, suppresses own childhood needs.",
+      "protectiveIntention": "Maintains family functioning; prevents collapse by over-functioning.",
+      "distinguishingBehaviors": "Parentification. Allies with Perfectionist, Taskmaster Guardians. Denies own Inner Child needs.",
+      "sharedDescription": false,
+      "missingInApp": false
+    },
+    {
+      "id": "kid-27",
+      "appName": "Selfish / Entitled Child",
+      "category": "Inner Child",
+      "sourceUrl": "https://sfhelp.org/popIF/selfish_child.htm",
+      "aliases": [
+        "Selfish Child",
+        "Entitled Child",
+        "Selfish / Entitled Child"
+      ],
+      "functionSummary": "Demands own way without regard for others; 'I deserve it all.' Marked NEW.",
+      "protectiveIntention": "Compensates for early deprivation; claims what was denied.",
+      "distinguishingBehaviors": "Marked NEW on roster. May overlap with Entitled One / Jealous One Guardian.",
+      "sharedDescription": false,
+      "missingInApp": false
+    },
+    {
+      "id": "kid-28",
+      "appName": "Shamed Child",
+      "category": "Inner Child",
+      "sourceUrl": "https://sfhelp.org/popIF/shamed_child.htm",
+      "aliases": [
+        "Shamed Child"
+      ],
+      "functionSummary": "Feels fundamentally flawed, exposed, and unworthy; 'There is something wrong with me.'",
+      "protectiveIntention": "Hides true self to avoid annihilating judgment; shrinks to survive.",
+      "distinguishingBehaviors": "Processes Historian's data for self-condemnation. Hinders Nurturer's self-care. Allies with Guilty Child and Critic.",
+      "sharedDescription": false,
+      "missingInApp": false
+    },
+    {
+      "id": "kid-29",
+      "appName": "Sly / Dishonest Child",
+      "category": "Inner Child",
+      "sourceUrl": "https://sfhelp.org/popIF/liar_con.htm",
+      "aliases": [
+        "Sly Child",
+        "Dishonest Child",
+        "Sly / Dishonest Child"
+      ],
+      "functionSummary": "Uses deception, manipulation, and secrecy to navigate unsafe environments.",
+      "protectiveIntention": "Survives by concealing truth; controls information flow.",
+      "distinguishingBehaviors": "Shared URL with Con artist/Thief/Cheat, Liar/Spy/Secret Keeper Guardians. Child version more survival-based, less malicious.",
+      "sharedDescription": true,
+      "sharedWith": [
+        "grd-10",
+        "grd-29"
+      ],
+      "missingInApp": false
+    },
+    {
+      "id": "kid-30",
+      "appName": "Sensual / Sexual One",
+      "category": "Inner Child",
+      "sourceUrl": "https://sfhelp.org/popIF/sexual1.htm",
+      "aliases": [
+        "Sensual Child",
+        "Sexual Child",
+        "Sensual / Sexual One",
+        "Teen Sexual Part"
+      ],
+      "functionSummary": "Expresses sexuality, sensuality, and romantic longing; often manifests as teen energy.",
+      "protectiveIntention": "Seeks intimacy and validation through physical connection; asserts aliveness.",
+      "distinguishingBehaviors": "Often a teen part. May overlap with Flirt/Seducer/Slut/Voyeur Guardian.",
+      "sharedDescription": false,
+      "missingInApp": false
+    },
+    {
+      "id": "kid-31",
+      "appName": "Friendly / Social / Playful Child",
+      "category": "Inner Child",
+      "sourceUrl": "https://sfhelp.org/popIF/playful_child.htm",
+      "aliases": [
+        "Friendly Child",
+        "Social Child",
+        "Playful Child",
+        "Friendly / Social / Playful Child"
+      ],
+      "functionSummary": "Engages others with ease, joy, and spontaneity; plays for play's sake.",
+      "protectiveIntention": "Builds social bonds; counters isolation through lightness.",
+      "distinguishingBehaviors": "No individual description page found; listed only on roster. Flag for verification.",
+      "sharedDescription": false,
+      "missingInApp": false
+    },
+    {
+      "id": "kid-32",
+      "appName": "Other Inner Children",
+      "category": "Inner Child",
+      "sourceUrl": "https://sfhelp.org/gwc/IF/innerfam.htm",
+      "aliases": [
+        "(others)"
+      ],
+      "functionSummary": "Gerlach notes '(others)' \u2014 additional Inner Children not individually cataloged.",
+      "protectiveIntention": "Acknowledges roster is not exhaustive; each person has unique parts.",
+      "distinguishingBehaviors": "Flag: app may have parts not in Gerlach's list, or vice versa.",
+      "sharedDescription": false,
+      "missingInApp": true
+    },
+    {
+      "id": "grd-01",
+      "appName": "Abuser / Sadist / Bully / Rapist",
+      "category": "Guardian",
+      "sourceUrl": "https://sfhelp.org/popIF/abuser_tyrant.htm",
+      "aliases": [
+        "Abuser",
+        "Sadist",
+        "Bully",
+        "Rapist",
+        "Tyrant",
+        "Abuser / Sadist / Bully / Rapist"
+      ],
+      "functionSummary": "Inflicts harm on self or others to discharge rage and exert control; most extreme Guardian.",
+      "protectiveIntention": "Pre-empts victimization by becoming perpetrator; maintains power through terror.",
+      "distinguishingBehaviors": "Extreme end of Guardian spectrum. 'Fiercely dedicated to protecting us and our naive, needy Inner Kids' via violence.",
+      "sharedDescription": false,
+      "missingInApp": false
+    },
+    {
+      "id": "grd-02",
+      "appName": "Addict / Compulsive One",
+      "category": "Guardian",
+      "sourceUrl": "https://sfhelp.org/popIF/addict.htm",
+      "aliases": [
+        "Addict",
+        "Compulsive One",
+        "Addict / Compulsive One"
+      ],
+      "functionSummary": "Uses substances, behaviors, or processes to numb, escape, or self-soothe; compulsive repetition.",
+      "protectiveIntention": "Anesthetizes unbearable feelings (shame, terror, grief); provides predictable relief.",
+      "distinguishingBehaviors": "Partners with Anesthetist/Numb-er, Blocker. 'Protective' logic: better addiction than feeling.",
+      "sharedDescription": false,
+      "missingInApp": false
+    },
+    {
+      "id": "grd-03",
+      "appName": "Anesthetist / Numb-er / Blocker",
+      "category": "Guardian",
+      "sourceUrl": "https://sfhelp.org/popIF/numb-er.htm",
+      "aliases": [
+        "Anesthetist",
+        "Numb-er",
+        "Blocker",
+        "Anesthetist / Numb-er / Blocker"
+      ],
+      "functionSummary": "Numbs emotions, blocks awareness, and prevents remembering painful things; chemical/psychic anesthesia.",
+      "protectiveIntention": "Shields Inner Kids from overwhelming pain; allows functioning despite trauma.",
+      "distinguishingBehaviors": "Allows remembering but numbs emotions (with Analyzer). Blocker prevents risky memories (repression). Partners with Addict, Overwhelmed Child, Scared Child.",
+      "sharedDescription": false,
+      "missingInApp": false
+    },
+    {
+      "id": "grd-04",
+      "appName": "Avoider / Fugitive / Runner",
+      "category": "Guardian",
+      "sourceUrl": "https://sfhelp.org/popIF/avoider.htm",
+      "aliases": [
+        "Avoider",
+        "Fugitive",
+        "Runner",
+        "Avoider / Fugitive / Runner"
+      ],
+      "functionSummary": "Evades situations, people, and internal experiences perceived as threatening; flight response.",
+      "protectiveIntention": "Prevents exposure to triggers; maintains safety through absence.",
+      "distinguishingBehaviors": "Procrastination, social withdrawal, emotional unavailability. 'Forgetting,' 'spacing out.'",
+      "sharedDescription": false,
+      "missingInApp": false
+    },
+    {
+      "id": "grd-05",
+      "appName": "Bitch / Witch / Bastard",
+      "category": "Guardian",
+      "sourceUrl": "https://sfhelp.org/popIF/bastard_bitch.htm",
+      "aliases": [
+        "Bitch",
+        "Witch",
+        "Bastard",
+        "Bitch / Witch / Bastard"
+      ],
+      "functionSummary": "Lashes out with cruelty, sarcasm, and verbal aggression; preemptive attack to deter closeness.",
+      "protectiveIntention": "Repels potential rejecters/abusers; 'I'll hurt you before you hurt me.'",
+      "distinguishingBehaviors": "Rage attacks, screaming. Protects vulnerable Inner Kids via intimidation.",
+      "sharedDescription": false,
+      "missingInApp": false
+    },
+    {
+      "id": "grd-06",
+      "appName": "Catastrophizer",
+      "category": "Guardian",
+      "sourceUrl": "https://sfhelp.org/popIF/catastrophizer.htm",
+      "aliases": [
+        "Catastrophizer"
+      ],
+      "functionSummary": "Imagines worst-case scenarios; 'We're gonna die!' Amplifies threat perception.",
+      "protectiveIntention": "Prepares for maximum danger; mobilizes full defensive resources.",
+      "distinguishingBehaviors": "Triggers Health Director hyper-concern (hypochondria). Allies with Worrier, Pessimist, Scared Child. Distorts Analyzer's conclusions.",
+      "sharedDescription": false,
+      "missingInApp": false
+    },
+    {
+      "id": "grd-07",
+      "appName": "Competitor / Opponent",
+      "category": "Guardian",
+      "sourceUrl": "https://sfhelp.org/popIF/competitor.htm",
+      "aliases": [
+        "Competitor",
+        "Opponent",
+        "Competitor / Opponent"
+      ],
+      "functionSummary": "Frames life as zero-sum contest; must win to be safe; views others as rivals.",
+      "protectiveIntention": "Prevents domination and loss of status; ensures survival through superiority.",
+      "distinguishingBehaviors": "No individual description page found; listed only on roster. Flag for verification.",
+      "sharedDescription": false,
+      "missingInApp": false
+    },
+    {
+      "id": "grd-08",
+      "appName": "Controller / Manipulator / User",
+      "category": "Guardian",
+      "sourceUrl": "https://sfhelp.org/popIF/controller.htm",
+      "aliases": [
+        "Controller",
+        "Manipulator",
+        "User",
+        "Controller / Manipulator / User"
+      ],
+      "functionSummary": "Orchestrates people and situations to guarantee safety; uses covert influence and exploitation.",
+      "protectiveIntention": "Eliminates uncertainty by micromanaging reality; prevents helplessness.",
+      "distinguishingBehaviors": "No individual description page found; listed only on roster. Flag for verification.",
+      "sharedDescription": false,
+      "missingInApp": false
+    },
+    {
+      "id": "grd-09",
+      "appName": "Critic / Shamer / Blamer",
+      "category": "Guardian",
+      "sourceUrl": "https://sfhelp.org/popIF/critic.htm",
+      "aliases": [
+        "Critic",
+        "Shamer",
+        "Blamer",
+        "Inner Critic",
+        "Critic / Shamer / Blamer"
+      ],
+      "functionSummary": "Ceaselessly catalogs flaws, failures, and mistakes; discounts praise; rebukes every perceived sin.",
+      "protectiveIntention": "Pre-empts external criticism by attacking first; maintains impossible standards to avoid shame.",
+      "distinguishingBehaviors": "Works with Cynic/Doubter, Perfectionist, Worrier, Catastrophizer. Takes over Self, lives in traumatic past. Protects Inner Kids from harm. Hal & Sidra Stone's 'Embracing Your Inner Critic' referenced.",
+      "sharedDescription": false,
+      "missingInApp": false
+    },
+    {
+      "id": "grd-10",
+      "appName": "Con artist / Thief / Cheat",
+      "category": "Guardian",
+      "sourceUrl": "https://sfhelp.org/popIF/liar_con.htm",
+      "aliases": [
+        "Con artist",
+        "Thief",
+        "Cheat",
+        "Con artist / Thief / Cheat"
+      ],
+      "functionSummary": "Deceives, steals, and cheats to secure resources and advantage; manipulative exploitation.",
+      "protectiveIntention": "Ensures survival in perceived scarcity; 'take before taken from.'",
+      "distinguishingBehaviors": "Shared URL with Liar/Spy/Secret Keeper and Sly/Dishonest Child. Guardian version more calculated/predatory.",
+      "sharedDescription": true,
+      "sharedWith": [
+        "grd-29",
+        "kid-29"
+      ],
+      "missingInApp": false
+    },
+    {
+      "id": "grd-11",
+      "appName": "Cynic / Pessimist",
+      "category": "Guardian",
+      "sourceUrl": "https://sfhelp.org/popIF/cynic_pessimist.htm",
+      "aliases": [
+        "Cynic",
+        "Pessimist",
+        "Cynic / Pessimist",
+        "Doubter"
+      ],
+      "functionSummary": "Expects the worst, discounts the positive; 'Nothing works, no one cares.'",
+      "protectiveIntention": "Prevents disappointment by lowering expectations; 'protects' from hope.",
+      "distinguishingBehaviors": "Distorts Analyzer's conclusions. Allies with Catastrophizer, Worrier, Scared Child, Lost Child to disable Managers.",
+      "sharedDescription": false,
+      "missingInApp": false
+    },
+    {
+      "id": "grd-12",
+      "appName": "Daredevil / Risk-taker",
+      "category": "Guardian",
+      "sourceUrl": "https://sfhelp.org/popIF/daredevil.htm",
+      "aliases": [
+        "Daredevil",
+        "Risk-taker",
+        "Daredevil / Risk-taker"
+      ],
+      "functionSummary": "Seeks danger and intensity to feel alive; counters numbness through adrenaline.",
+      "protectiveIntention": "Breaks through deadness; proves invulnerability through survival.",
+      "distinguishingBehaviors": "No individual description page found; listed only on roster. Flag for verification.",
+      "sharedDescription": false,
+      "missingInApp": false
+    },
+    {
+      "id": "grd-13",
+      "appName": "Distracter / Defocuser",
+      "category": "Guardian",
+      "sourceUrl": "https://sfhelp.org/popIF/distracter.htm",
+      "aliases": [
+        "Distracter",
+        "Defocuser",
+        "Distracter / Defocuser"
+      ],
+      "functionSummary": "Scatters attention, prevents sustained focus on painful or threatening material.",
+      "protectiveIntention": "Avoids awareness of distressing content; keeps consciousness occupied.",
+      "distinguishingBehaviors": "No individual description page found; listed only on roster. Flag for verification.",
+      "sharedDescription": false,
+      "missingInApp": false
+    },
+    {
+      "id": "grd-14",
+      "appName": "Egotist / Narcissist",
+      "category": "Guardian",
+      "sourceUrl": "https://sfhelp.org/popIF/egotist.htm",
+      "aliases": [
+        "Egotist",
+        "Narcissist",
+        "Egotist / Narcissist"
+      ],
+      "functionSummary": "Inflates self-importance to mask deep inadequacy; demands admiration and special treatment.",
+      "protectiveIntention": "Shields fragile self-worth; prevents collapse into shame.",
+      "distinguishingBehaviors": "No individual description page found; listed only on roster. Flag for verification.",
+      "sharedDescription": false,
+      "missingInApp": false
+    },
+    {
+      "id": "grd-15",
+      "appName": "Entertainer / Clown / Joker",
+      "category": "Guardian",
+      "sourceUrl": "https://sfhelp.org/popIF/entertainer.htm",
+      "aliases": [
+        "Entertainer Guardian",
+        "Clown Guardian",
+        "Joker Guardian",
+        "Entertainer / Clown / Joker"
+      ],
+      "functionSummary": "Uses humor and performance to deflect, charm, and control; 'Laugh so you don't see me hurt.'",
+      "protectiveIntention": "Diffuses tension; hides vulnerability; secures acceptance through entertainment.",
+      "distinguishingBehaviors": "Shared URL with Entertainer/Performer/Star (kid-09) and Joker/Clown/Trickster/Imp (kid-20). Guardian version more defensive/manipulative. Marked * = may be Guardian subself.",
+      "sharedDescription": true,
+      "sharedWith": [
+        "kid-09",
+        "kid-20"
+      ],
+      "missingInApp": false
+    },
+    {
+      "id": "grd-16",
+      "appName": "Entitled One / Jealous One",
+      "category": "Guardian",
+      "sourceUrl": "https://sfhelp.org/popIF/entitled_1.htm",
+      "aliases": [
+        "Entitled One",
+        "Jealous One",
+        "Entitled One / Jealous One"
+      ],
+      "functionSummary": "Demands special rights, resents others' advantages; 'I deserve more.'",
+      "protectiveIntention": "Compensates for deprivation; guards against loss of status/resources.",
+      "distinguishingBehaviors": "May overlap with Selfish/Entitled Child (NEW). No individual description page found; listed only on roster. Flag for verification.",
+      "sharedDescription": false,
+      "missingInApp": false
+    },
+    {
+      "id": "grd-17",
+      "appName": "Fanatic / Terrorist / Zealot",
+      "category": "Guardian",
+      "sourceUrl": "https://sfhelp.org/popIF/fanatic.htm",
+      "aliases": [
+        "Fanatic",
+        "Terrorist",
+        "Zealot",
+        "Fanatic / Terrorist / Zealot"
+      ],
+      "functionSummary": "Imposes rigid ideology with absolute certainty; destroys dissent to maintain control.",
+      "protectiveIntention": "Eliminates ambiguity and internal conflict through dogmatic certainty.",
+      "distinguishingBehaviors": "No individual description page found; listed only on roster. Flag for verification.",
+      "sharedDescription": false,
+      "missingInApp": false
+    },
+    {
+      "id": "grd-18",
+      "appName": "Fantasizer / Dreamer",
+      "category": "Guardian",
+      "sourceUrl": "https://sfhelp.org/popIF/fantasizer.htm",
+      "aliases": [
+        "Fantasizer Guardian",
+        "Dreamer Guardian",
+        "Fantasizer / Dreamer"
+      ],
+      "functionSummary": "Escapes into elaborate fantasy worlds; denies reality through dissociation and magical thinking.",
+      "protectiveIntention": "Creates safe internal reality when external world is unbearable.",
+      "distinguishingBehaviors": "Shared URL with Fantasizer/Dreamer/Mystic Child (kid-10). Guardian version more dissociative/denial-based. Marked * = may be Guardian subself.",
+      "sharedDescription": true,
+      "sharedWith": [
+        "kid-10"
+      ],
+      "missingInApp": false
+    },
+    {
+      "id": "grd-19",
+      "appName": "Flirt / Seducer / Slut / Voyeur",
+      "category": "Guardian",
+      "sourceUrl": "https://sfhelp.org/popIF/whore.htm",
+      "aliases": [
+        "Flirt",
+        "Seducer",
+        "Slut",
+        "Voyeur",
+        "Flirt / Seducer / Slut / Voyeur"
+      ],
+      "functionSummary": "Uses sexuality to gain power, validation, or safety; performs desirability.",
+      "protectiveIntention": "Secures attachment and protection through sexual currency; controls via allure.",
+      "distinguishingBehaviors": "May overlap with Sensual/Sexual Child. No individual description page found; listed only on roster. Flag for verification.",
+      "sharedDescription": false,
+      "missingInApp": false
+    },
+    {
+      "id": "grd-20",
+      "appName": "Hermit / Loner / Recluse",
+      "category": "Guardian",
+      "sourceUrl": "https://sfhelp.org/popIF/loner_recluse.htm",
+      "aliases": [
+        "Hermit",
+        "Loner",
+        "Recluse",
+        "Hermit / Loner / Recluse"
+      ],
+      "functionSummary": "Withdraws from all social contact; isolates to avoid any relational risk.",
+      "protectiveIntention": "Guarantees safety through total withdrawal; 'alone = safe.'",
+      "distinguishingBehaviors": "No individual description page found; listed only on roster. Flag for verification.",
+      "sharedDescription": false,
+      "missingInApp": false
+    },
+    {
+      "id": "grd-21",
+      "appName": "Hero(ine) / Champion / Star",
+      "category": "Guardian",
+      "sourceUrl": "https://sfhelp.org/popIF/hero.htm",
+      "aliases": [
+        "Hero",
+        "Heroine",
+        "Champion",
+        "Star",
+        "Hero(ine) / Champion / Star"
+      ],
+      "functionSummary": "Performs extraordinary feats to prove worth and gain love; savior complex.",
+      "protectiveIntention": "Earns indispensability; prevents abandonment through heroic utility.",
+      "distinguishingBehaviors": "No individual description page found; listed only on roster. Flag for verification.",
+      "sharedDescription": false,
+      "missingInApp": false
+    },
+    {
+      "id": "grd-22",
+      "appName": "Hoarder / Miser / Collector",
+      "category": "Guardian",
+      "sourceUrl": "https://sfhelp.org/popIF/hoarder.htm",
+      "aliases": [
+        "Hoarder",
+        "Miser",
+        "Collector",
+        "Hoarder / Miser / Collector"
+      ],
+      "functionSummary": "Accumulates and refuses to discard; 'I might need it someday.'",
+      "protectiveIntention": "Guards against future deprivation; creates buffer against scarcity.",
+      "distinguishingBehaviors": "No individual description page found; listed only on roster. Flag for verification.",
+      "sharedDescription": false,
+      "missingInApp": false
+    },
+    {
+      "id": "grd-23",
+      "appName": "Hypochondriac / Sick One",
+      "category": "Guardian",
+      "sourceUrl": "https://sfhelp.org/popIF/hypochondriac.htm",
+      "aliases": [
+        "Hypochondriac",
+        "Sick One",
+        "Hypochondriac / Sick One"
+      ],
+      "functionSummary": "Generates or amplifies physical symptoms to receive care and avoid demands.",
+      "protectiveIntention": "Legitimizes need for nurturance; escapes responsibilities through illness.",
+      "distinguishingBehaviors": "Allies with Catastrophizer, Worrier, Health Director (hyper-concern). No individual description page found; listed only on roster. Flag for verification.",
+      "sharedDescription": false,
+      "missingInApp": false
+    },
+    {
+      "id": "grd-24",
+      "appName": "Idealist / Optimist / Missionary",
+      "category": "Guardian",
+      "sourceUrl": "https://sfhelp.org/popIF/idealist.htm",
+      "aliases": [
+        "Idealist",
+        "Optimist",
+        "Missionary",
+        "Idealist / Optimist / Missionary"
+      ],
+      "functionSummary": "Projects perfect visions, ignores reality; 'Everything will work out if we just believe.'",
+      "protectiveIntention": "Counters despair with magical positivity; avoids facing painful truths.",
+      "distinguishingBehaviors": "Distorts Analyzer's conclusions. No individual description page found; listed only on roster. Flag for verification.",
+      "sharedDescription": false,
+      "missingInApp": false
+    },
+    {
+      "id": "grd-25",
+      "appName": "Impatient / Hyper One",
+      "category": "Guardian",
+      "sourceUrl": "https://sfhelp.org/popIF/impatient1.htm",
+      "aliases": [
+        "Impatient One",
+        "Hyper One",
+        "Impatient / Hyper One"
+      ],
+      "functionSummary": "Demands immediate results; frantic pace to outrun anxiety; 'NOW!'",
+      "protectiveIntention": "Prevents feeling trapped in waiting; discharges tension through speed.",
+      "distinguishingBehaviors": "May overlap with Hyper Child (NEW). No individual description page found; listed only on roster. Flag for verification.",
+      "sharedDescription": false,
+      "missingInApp": false
+    },
+    {
+      "id": "grd-26",
+      "appName": "Irresponsible One",
+      "category": "Guardian",
+      "sourceUrl": "https://sfhelp.org/popIF/irresponsible.htm",
+      "aliases": [
+        "Irresponsible One"
+      ],
+      "functionSummary": "Refuses accountability, blames others, avoids consequences; 'Not my fault.' Marked NEW.",
+      "protectiveIntention": "Escapes shame of failure; maintains innocence by denying agency.",
+      "distinguishingBehaviors": "Marked NEW on roster. No individual description page found; listed only on roster. Flag for verification.",
+      "sharedDescription": false,
+      "missingInApp": false
+    },
+    {
+      "id": "grd-27",
+      "appName": "Jealous / Envious One",
+      "category": "Guardian",
+      "sourceUrl": "https://sfhelp.org/popIF/jealous_envious1.htm",
+      "aliases": [
+        "Jealous One",
+        "Envious One",
+        "Jealous / Envious One"
+      ],
+      "functionSummary": "Resents others' possessions, qualities, luck; 'Why them, not me?'",
+      "protectiveIntention": "Signals unmet needs; protects against feeling 'less than.'",
+      "distinguishingBehaviors": "May overlap with Entitled One/Jealous One. No individual description page found; listed only on roster. Flag for verification.",
+      "sharedDescription": false,
+      "missingInApp": false
+    },
+    {
+      "id": "grd-28",
+      "appName": "Judge / Bigot",
+      "category": "Guardian",
+      "sourceUrl": "https://sfhelp.org/popIF/judge.htm",
+      "aliases": [
+        "Judge",
+        "Bigot",
+        "Judge / Bigot"
+      ],
+      "functionSummary": "Condemns self and others by rigid moral categories; prejudice as protection. Marked NEW.",
+      "protectiveIntention": "Simplifies complex world into safe/unsafe; maintains superiority.",
+      "distinguishingBehaviors": "Marked NEW on roster. No individual description page found; listed only on roster. Flag for verification.",
+      "sharedDescription": false,
+      "missingInApp": false
+    },
+    {
+      "id": "grd-29",
+      "appName": "Liar / Spy / Secret Keeper",
+      "category": "Guardian",
+      "sourceUrl": "https://sfhelp.org/popIF/liar_con.htm",
+      "aliases": [
+        "Liar",
+        "Spy",
+        "Secret Keeper",
+        "Liar / Spy / Secret Keeper"
+      ],
+      "functionSummary": "Conceals truth, gathers intelligence, guards information; strategic deception.",
+      "protectiveIntention": "Controls narrative; prevents exposure of vulnerability; 'knowledge is power.'",
+      "distinguishingBehaviors": "Shared URL with Con artist/Thief/Cheat and Sly/Dishonest Child. Guardian version more strategic/systematic.",
+      "sharedDescription": true,
+      "sharedWith": [
+        "grd-10",
+        "kid-29"
+      ],
+      "missingInApp": false
+    },
+    {
+      "id": "grd-30",
+      "appName": "Magician / Illusionist / Denier",
+      "category": "Guardian",
+      "sourceUrl": "https://sfhelp.org/popIF/magician.htm",
+      "aliases": [
+        "Magician",
+        "Illusionist",
+        "Denier",
+        "Magician / Illusionist / Denier"
+      ],
+      "functionSummary": "Distorts reality: 'Problem? What problem?' Makes unacceptable truths disappear.",
+      "protectiveIntention": "Protects Inner Kids from painful awareness; maintains functional denial.",
+      "distinguishingBehaviors": "Distorts Historian's remembered information. Allies with Catastrophizer, Cynic, Idealist, Critic, Pleaser. 'Problem? What problem?'",
+      "sharedDescription": false,
+      "missingInApp": false
+    },
+    {
+      "id": "grd-31",
+      "appName": "Matriarch / Patriarch",
+      "category": "Guardian",
+      "sourceUrl": "https://sfhelp.org/popIF/matriarch.htm",
+      "aliases": [
+        "Matriarch",
+        "Patriarch",
+        "Matriarch / Patriarch"
+      ],
+      "functionSummary": "Rules inner family with authoritarian control; 'My way or the highway.'",
+      "protectiveIntention": "Maintains order and hierarchy; prevents chaos through absolute authority.",
+      "distinguishingBehaviors": "No individual description page found; listed only on roster. Flag for verification.",
+      "sharedDescription": false,
+      "missingInApp": false
+    },
+    {
+      "id": "grd-32",
+      "appName": "Nagger / Reminder",
+      "category": "Guardian",
+      "sourceUrl": "https://sfhelp.org/popIF/nagger.htm",
+      "aliases": [
+        "Nagger",
+        "Reminder",
+        "Nagger / Reminder"
+      ],
+      "functionSummary": "Relentlessly points out obligations, errors, and duties; 'Don't forget, you should...'",
+      "protectiveIntention": "Prevents mistakes and omissions through constant vigilance.",
+      "distinguishingBehaviors": "No individual description page found; listed only on roster. Flag for verification.",
+      "sharedDescription": false,
+      "missingInApp": false
+    },
+    {
+      "id": "grd-33",
+      "appName": "Nihilist / Fatalist",
+      "category": "Guardian",
+      "sourceUrl": "https://sfhelp.org/popIF/fatalist_nihilist.htm",
+      "aliases": [
+        "Nihilist",
+        "Fatalist",
+        "Nihilist / Fatalist"
+      ],
+      "functionSummary": "Believes nothing matters, effort is futile; 'It's all pointless anyway.'",
+      "protectiveIntention": "Prevents disappointment by pre-empting hope; 'can't fail if you don't try.'",
+      "distinguishingBehaviors": "No individual description page found; listed only on roster. Flag for verification.",
+      "sharedDescription": false,
+      "missingInApp": false
+    },
+    {
+      "id": "grd-34",
+      "appName": "Obsesser",
+      "category": "Guardian",
+      "sourceUrl": "https://sfhelp.org/popIF/obssesser.htm",
+      "aliases": [
+        "Obsesser",
+        "Obsessive One"
+      ],
+      "functionSummary": "Loops on thoughts, images, or urges; cannot let go. Marked NEW.",
+      "protectiveIntention": "Attempts to solve unsolvable problems through repetition; controls anxiety via mental ritual.",
+      "distinguishingBehaviors": "Marked NEW on roster. No individual description page found; listed only on roster. Flag for verification.",
+      "sharedDescription": false,
+      "missingInApp": false
+    },
+    {
+      "id": "grd-35",
+      "appName": "People-Pleaser / Peacemaker",
+      "category": "Guardian",
+      "sourceUrl": "https://sfhelp.org/popIF/pleaser.htm",
+      "aliases": [
+        "People-Pleaser",
+        "Peacemaker",
+        "People-Pleaser / Peacemaker"
+      ],
+      "functionSummary": "Sacrifices own needs to appease others; 'Whatever you want.' Prevents conflict at all costs.",
+      "protectiveIntention": "Avoids rejection, abandonment, and rage by merging with others' wishes.",
+      "distinguishingBehaviors": "Distorts Analyzer's conclusions. Allies with Good/Dutiful Child, Perfectionist. No individual description page found; listed only on roster. Flag for verification.",
+      "sharedDescription": false,
+      "missingInApp": false
+    },
+    {
+      "id": "grd-36",
+      "appName": "Perfectionist",
+      "category": "Guardian",
+      "sourceUrl": "https://sfhelp.org/popIF/perfectionist.htm",
+      "aliases": [
+        "Perfectionist"
+      ],
+      "functionSummary": "Demands flawlessness; 'Perfect or nothing.' Prevents shame by eliminating errors.",
+      "protectiveIntention": "Pre-empts criticism and rejection by achieving impossible standard.",
+      "distinguishingBehaviors": "Develops in traumatic low-nurturance years. Works with Inner Critic, Pleaser. Labels anything < perfection as shameful. 'I can't help it' = disabled Self. Allies with Good/Dutiful Child.",
+      "sharedDescription": false,
+      "missingInApp": false,
+      "thumbnail": "/thumbnails/Protective Voices-Perfectionist-thumbnail.png"
+    },
+    {
+      "id": "grd-37",
+      "appName": "Skeptic / Doubter",
+      "category": "Guardian",
+      "sourceUrl": "https://sfhelp.org/popIF/skeptic_doubter.htm",
+      "aliases": [
+        "Skeptic",
+        "Doubter",
+        "Skeptic / Doubter"
+      ],
+      "functionSummary": "Questions everything; 'Prove it.' Blocks trust and spontaneous action.",
+      "protectiveIntention": "Prevents gullibility and betrayal; tests reality before committing.",
+      "distinguishingBehaviors": "Distorts Analyzer's conclusions. Allies with Cynic/Pessimist. No individual description page found; listed only on roster. Flag for verification.",
+      "sharedDescription": false,
+      "missingInApp": false
+    },
+    {
+      "id": "grd-38",
+      "appName": "Pretender / Phony / Politician",
+      "category": "Guardian",
+      "sourceUrl": "https://sfhelp.org/popIF/pretender.htm",
+      "aliases": [
+        "Pretender",
+        "Phony",
+        "Politician",
+        "Pretender / Phony / Politician"
+      ],
+      "functionSummary": "Performs false self for approval; wears masks, hides authentic reactions.",
+      "protectiveIntention": "Secures acceptance by being who others want; avoids authentic exposure.",
+      "distinguishingBehaviors": "No individual description page found; listed only on roster. Flag for verification.",
+      "sharedDescription": false,
+      "missingInApp": false
+    },
+    {
+      "id": "grd-39",
+      "appName": "Predictor",
+      "category": "Guardian",
+      "sourceUrl": "https://sfhelp.org/popIF/predictor.htm",
+      "aliases": [
+        "Predictor"
+      ],
+      "functionSummary": "Forecasts negative outcomes to prepare defenses; 'I knew this would happen.' Marked NEW.",
+      "protectiveIntention": "Claims control through prophecy; 'See? I was ready.'",
+      "distinguishingBehaviors": "Marked NEW on roster. No individual description page found; listed only on roster. Flag for verification.",
+      "sharedDescription": false,
+      "missingInApp": false
+    },
+    {
+      "id": "grd-40",
+      "appName": "Procrastinator / Evader",
+      "category": "Guardian",
+      "sourceUrl": "https://sfhelp.org/popIF/procrastinator.htm",
+      "aliases": [
+        "Procrastinator",
+        "Evader",
+        "Procrastinator / Evader"
+      ],
+      "functionSummary": "Delays action to avoid potential failure, judgment, or discomfort; 'Later.'",
+      "protectiveIntention": "Prevents exposure of incompetence; 'not trying = not failing.'",
+      "distinguishingBehaviors": "Allies with Avoider, Perfectionist. No individual description page found; listed only on roster. Flag for verification.",
+      "sharedDescription": false,
+      "missingInApp": false
+    },
+    {
+      "id": "grd-41",
+      "appName": "Psycho / Weirdo / Schizo / Maniac",
+      "category": "Guardian",
+      "sourceUrl": "https://sfhelp.org/popIF/psycho.htm",
+      "aliases": [
+        "Psycho",
+        "Weirdo",
+        "Schizo",
+        "Maniac",
+        "Psycho / Weirdo / Schizo / Maniac"
+      ],
+      "functionSummary": "Embodies terrifying, chaotic, 'crazy' energies; scares self and others into compliance.",
+      "protectiveIntention": "Deters intimacy and demands through intimidation; 'Don't mess with me.'",
+      "distinguishingBehaviors": "No individual description page found; listed only on roster. Flag for verification.",
+      "sharedDescription": false,
+      "missingInApp": false
+    },
+    {
+      "id": "grd-42",
+      "appName": "Rager",
+      "category": "Guardian",
+      "sourceUrl": "https://sfhelp.org/popIF/rageful_child.htm",
+      "aliases": [
+        "Rager"
+      ],
+      "functionSummary": "Weaponized rage; calculated destruction to control environment. Note: 'may be an inner child.'",
+      "protectiveIntention": "Terrorizes threats into submission; 'I will destroy you before you destroy me.'",
+      "distinguishingBehaviors": "Shared URL with Rageful/Aggressive Child (kid-25). Guardian version more calculated/weaponized vs. Child's raw expression.",
+      "sharedDescription": true,
+      "sharedWith": [
+        "kid-25"
+      ],
+      "missingInApp": false
+    },
+    {
+      "id": "grd-43",
+      "appName": "Rationalizer / Explainer / Justifier",
+      "category": "Guardian",
+      "sourceUrl": "https://sfhelp.org/popIF/rationalizer.htm",
+      "aliases": [
+        "Rationalizer",
+        "Explainer",
+        "Justifier",
+        "Rationalizer / Explainer / Justifier"
+      ],
+      "functionSummary": "Constructs logical-sounding excuses for behavior; makes unacceptable actions seem reasonable.",
+      "protectiveIntention": "Preserves self-image; avoids shame by reframing; 'I had good reasons.'",
+      "distinguishingBehaviors": "No individual description page found; listed only on roster. Flag for verification.",
+      "sharedDescription": false,
+      "missingInApp": false
+    },
+    {
+      "id": "grd-44",
+      "appName": "Rebel / Defiant One / Rule Breaker",
+      "category": "Guardian",
+      "sourceUrl": "https://sfhelp.org/popIF/rebel.htm",
+      "aliases": [
+        "Rebel Guardian",
+        "Defiant One Guardian",
+        "Rule Breaker Guardian",
+        "Rebel / Defiant One / Rule Breaker"
+      ],
+      "functionSummary": "Systematically breaks rules and defies authority; 'You can't make me.'",
+      "protectiveIntention": "Asserts autonomy against perceived tyranny; 'Better dead than controlled.'",
+      "distinguishingBehaviors": "Shared URL with Defiant/Stubborn/Rebel Child (kid-07). Guardian version more extreme/rigid/ideological.",
+      "sharedDescription": true,
+      "sharedWith": [
+        "kid-07"
+      ],
+      "missingInApp": false
+    },
+    {
+      "id": "grd-45",
+      "appName": "Replayer / Repeater",
+      "category": "Guardian",
+      "sourceUrl": "https://sfhelp.org/popIF/replayer.htm",
+      "aliases": [
+        "Replayer",
+        "Repeater",
+        "Replayer / Repeater"
+      ],
+      "functionSummary": "Compulsively reenacts trauma scenarios; 'This time it'll be different.' Marked NEW.",
+      "protectiveIntention": "Attempts mastery through repetition; seeks different outcome to unresolved past.",
+      "distinguishingBehaviors": "Marked NEW on roster. No individual description page found; listed only on roster. Flag for verification.",
+      "sharedDescription": false,
+      "missingInApp": false
+    },
+    {
+      "id": "grd-46",
+      "appName": "Represser / Stuffer",
+      "category": "Guardian",
+      "sourceUrl": "https://sfhelp.org/popIF/represser.htm",
+      "aliases": [
+        "Represser",
+        "Stuffer",
+        "Represser / Stuffer"
+      ],
+      "functionSummary": "Pushes feelings and memories out of awareness; 'I don't feel that.' Marked NEW.",
+      "protectiveIntention": "Maintains functioning by compartmentalizing overwhelm; 'Out of sight, out of mind.'",
+      "distinguishingBehaviors": "Marked NEW on roster. Allies with Blocker, Anesthetist. No individual description page found; listed only on roster. Flag for verification.",
+      "sharedDescription": false,
+      "missingInApp": false
+    },
+    {
+      "id": "grd-47",
+      "appName": "Righteous / Pious One",
+      "category": "Guardian",
+      "sourceUrl": "https://sfhelp.org/popIF/righteous.htm",
+      "aliases": [
+        "Righteous One",
+        "Pious One",
+        "Righteous / Pious One"
+      ],
+      "functionSummary": "Claims moral superiority; judges others by rigid doctrinal standards.",
+      "protectiveIntention": "Elevates self above shame; 'I am good, therefore safe.'",
+      "distinguishingBehaviors": "No individual description page found; listed only on roster. Flag for verification.",
+      "sharedDescription": false,
+      "missingInApp": false
+    },
+    {
+      "id": "grd-48",
+      "appName": "Self-saboteur / Fail-er / Screw Up",
+      "category": "Guardian",
+      "sourceUrl": "https://sfhelp.org/popIF/saboteur.htm",
+      "aliases": [
+        "Self-saboteur",
+        "Fail-er",
+        "Screw Up",
+        "Self-saboteur / Fail-er / Screw Up"
+      ],
+      "functionSummary": "Undermines own success; 'If I fail on purpose, it hurts less.'",
+      "protectiveIntention": "Controls the manner of failure; prevents hope-disappointment cycle.",
+      "distinguishingBehaviors": "No individual description page found; listed only on roster. Flag for verification.",
+      "sharedDescription": false,
+      "missingInApp": false
+    },
+    {
+      "id": "grd-49",
+      "appName": "Shopper / Gambler / Spender",
+      "category": "Guardian",
+      "sourceUrl": "https://sfhelp.org/popIF/shopper.htm",
+      "aliases": [
+        "Shopper",
+        "Gambler",
+        "Spender",
+        "Shopper / Gambler / Spender"
+      ],
+      "functionSummary": "Uses spending, risk, and acquisition to soothe, excite, or fill emptiness.",
+      "protectiveIntention": "Momentary relief from inner void; 'retail therapy' as anesthesia.",
+      "distinguishingBehaviors": "No individual description page found; listed only on roster. Flag for verification.",
+      "sharedDescription": false,
+      "missingInApp": false
+    },
+    {
+      "id": "grd-50",
+      "appName": "Slob / Apathetic-Lazy One",
+      "category": "Guardian",
+      "sourceUrl": "https://sfhelp.org/popIF/slob.htm",
+      "aliases": [
+        "Slob",
+        "Apathetic One",
+        "Lazy One",
+        "Slob / Apathetic-Lazy One"
+      ],
+      "functionSummary": "Neglects self-care and environment; 'Why bother?' Passive resistance to demands.",
+      "protectiveIntention": "Avoids expectation of competence; 'If I do nothing, I can't fail.'",
+      "distinguishingBehaviors": "No individual description page found; listed only on roster. Flag for verification.",
+      "sharedDescription": false,
+      "missingInApp": false
+    },
+    {
+      "id": "grd-51",
+      "appName": "Suicider / Killer",
+      "category": "Guardian",
+      "sourceUrl": "https://sfhelp.org/popIF/suicider.htm",
+      "aliases": [
+        "Suicider",
+        "Killer",
+        "Suicider / Killer"
+      ],
+      "functionSummary": "Ultimate escape: death as solution to unbearable pain; homicidal ideation as protection.",
+      "protectiveIntention": "Guarantees end to suffering; 'Death is the only safety.'",
+      "distinguishingBehaviors": "Most lethal Guardian. No individual description page found; listed only on roster. Flag for verification.",
+      "sharedDescription": false,
+      "missingInApp": false
+    },
+    {
+      "id": "grd-52",
+      "appName": "Taskmaster / Overseer",
+      "category": "Guardian",
+      "sourceUrl": "https://sfhelp.org/popIF/taskmaster.htm",
+      "aliases": [
+        "Taskmaster",
+        "Overseer",
+        "Taskmaster / Overseer"
+      ],
+      "functionSummary": "Drives relentless performance; 'Work harder, do more.' Internal slave driver.",
+      "protectiveIntention": "Prevents criticism through over-achievement; 'If I do enough, I'm safe.'",
+      "distinguishingBehaviors": "Allies with Perfectionist, Responsible Child. No individual description page found; listed only on roster. Flag for verification.",
+      "sharedDescription": false,
+      "missingInApp": false
+    },
+    {
+      "id": "grd-53",
+      "appName": "Vagabond / Drifter / Bum",
+      "category": "Guardian",
+      "sourceUrl": "https://sfhelp.org/popIF/vagabond.htm",
+      "aliases": [
+        "Vagabond",
+        "Drifter",
+        "Bum",
+        "Vagabond / Drifter / Bum"
+      ],
+      "functionSummary": "Rejects stability, commitment, and roots; 'I don't belong anywhere.'",
+      "protectiveIntention": "Avoids attachment and its inevitable losses; freedom as safety.",
+      "distinguishingBehaviors": "No individual description page found; listed only on roster. Flag for verification.",
+      "sharedDescription": false,
+      "missingInApp": false
+    },
+    {
+      "id": "grd-54",
+      "appName": "Victim / Martyr / Loser",
+      "category": "Guardian",
+      "sourceUrl": "https://sfhelp.org/popIF/victim_martyr.htm",
+      "aliases": [
+        "Victim Guardian",
+        "Martyr Guardian",
+        "Loser Guardian",
+        "Victim / Martyr / Loser"
+      ],
+      "functionSummary": "Identifies with powerlessness and suffering; 'Nothing I do matters, woe is me.'",
+      "protectiveIntention": "Elicits rescue; avoids responsibility; 'My suffering proves my goodness.'",
+      "distinguishingBehaviors": "Shared URL with Helpless Child/Victim (kid-16). Guardian version more entrenched/identity-based vs. Child's genuine helplessness.",
+      "sharedDescription": true,
+      "sharedWith": [
+        "kid-16"
+      ],
+      "missingInApp": false
+    },
+    {
+      "id": "grd-55",
+      "appName": "Warrior / Amazon",
+      "category": "Guardian",
+      "sourceUrl": "https://sfhelp.org/popIF/warrior.htm",
+      "aliases": [
+        "Warrior",
+        "Amazon",
+        "Warrior / Amazon"
+      ],
+      "functionSummary": "Fights for survival and justice; disciplined aggression in service of protection.",
+      "protectiveIntention": "Defends vulnerable parts with strength and strategy; 'I will shield you.'",
+      "distinguishingBehaviors": "Healthier Guardian variant. No individual description page found; listed only on roster. Flag for verification.",
+      "sharedDescription": false,
+      "missingInApp": false
+    },
+    {
+      "id": "grd-56",
+      "appName": "Whiner / Complainer",
+      "category": "Guardian",
+      "sourceUrl": "https://sfhelp.org/popIF/whiner_complainer.htm",
+      "aliases": [
+        "Whiner",
+        "Complainer",
+        "Whiner / Complainer"
+      ],
+      "functionSummary": "Voices endless dissatisfaction; 'Nothing is right.' Signals distress without action.",
+      "protectiveIntention": "Calls for help indirectly; 'Hear my pain so someone fixes it.'",
+      "distinguishingBehaviors": "No individual description page found; listed only on roster. Flag for verification.",
+      "sharedDescription": false,
+      "missingInApp": false
+    },
+    {
+      "id": "grd-57",
+      "appName": "Worrier / Cautious One",
+      "category": "Guardian",
+      "sourceUrl": "https://sfhelp.org/popIF/worrier.htm",
+      "aliases": [
+        "Worrier",
+        "Cautious One",
+        "Worrier / Cautious One"
+      ],
+      "functionSummary": "Anticipates problems, scans for threats; 'What if...?' Chronic low-grade alarm.",
+      "protectiveIntention": "Prevents surprise; prepares for every contingency.",
+      "distinguishingBehaviors": "Allies with Catastrophizer, Scared Child, Cynic. Triggers Health Director hypochondria. No individual description page found; listed only on roster. Flag for verification.",
+      "sharedDescription": false,
+      "missingInApp": false,
+      "thumbnail": "/thumbnails/Protective Voices-Worrier or Cautious One-thumbnail.png"
+    },
+    {
+      "id": "grd-58",
+      "appName": "Other Guardians",
+      "category": "Guardian",
+      "sourceUrl": "https://sfhelp.org/gwc/IF/innerfam.htm",
+      "aliases": [
+        "(others)"
+      ],
+      "functionSummary": "Gerlach notes '(others)' \u2014 additional Guardians not individually cataloged.",
+      "protectiveIntention": "Acknowledges roster is not exhaustive; each person has unique protectors.",
+      "distinguishingBehaviors": "Flag: app may have parts not in Gerlach's list, or vice versa.",
+      "sharedDescription": false,
+      "missingInApp": true
+    }
+  ],
+  "summary": {
+    "totalGerlachParts": 112,
+    "managers": 22,
+    "innerChildren": 32,
+    "guardians": 58,
+    "sharedDescriptions": 10,
+    "partsWithIndividualPages": 47,
+    "partsRosterOnly": 65,
+    "newlyMarkedParts": 7,
+    "appTargetCount": 100,
+    "flags": [
+      "Far Seer/Visioner, Humanitarian, Learner/Student, Pace-setter/Balancer, Philosopher, Practical Adult, Prioritizer, Professor/Teacher, Socializer/Humanist, Spiritual One, Survivor, Wise One/Sage/Crone \u2014 no individual description pages found",
+      "Awed/Amazed Child, Bored Child, Curious Child/Explorer, Delighted/Excited Child, Friendly/Happy Child, Frustrated/Impatient Child, Loving/Loyal Child, Lonely/Needy Child, Friendly/Social/Playful Child \u2014 no individual description pages found",
+      "Competitor/Opponent, Controller/Manipulator/User, Daredevil/Risk-taker, Distracter/Defocuser, Egotist/Narcissist, Hero/Champion/Star, Hoarder/Miser/Collector, Hypochondriac/Sick One, Idealist/Optimist/Missionary, Impatient/Hyper One, Irresponsible One, Jealous/Envious One, Judge/Bigot, Matriarch/Patriarch, Nagger/Reminder, Nihilist/Fatalist, Obsesser, People-Pleaser/Peacemaker, Predictor, Procrastinator/Evader, Psycho/Weirdo/Schizo/Maniac, Rationalizer/Explainer/Justifier, Replayer/Repeater, Represser/Stuffer, Righteous/Pious One, Self-saboteur/Fail-er/Screw Up, Shopper/Gambler/Spender, Slob/Apathetic-Lazy One, Suicider/Killer, Taskmaster/Overseer, Vagabond/Drifter/Bum, Warrior/Amazon, Whiner/Complainer, Worrier/Cautious One \u2014 no individual description pages found",
+      "7 parts marked NEW on roster: Hyper Child, Overwhelmed/Paralyzed Child, Selfish/Entitled Child, Irresponsible One, Obsesser, Replayer/Repeater, Represser/Stuffer, Judge/Bigot, Predictor (9 total with NEW marker)",
+      "10 shared descriptions across categories: Artist/Creative (mgr/kid), Defiant/Rebel (kid/grd), Entertainer (kid/grd), Fantasizer (kid/grd), Helpless Child/Victim (kid/grd), Joker/Clown (kid/grd), Liar/Con artist (kid/grd/grd), Rager (kid/grd), Sly/Dishonest (kid/grd/grd)",
+      "Gerlach roster ~112 vs app target 100 \u2014 need to reconcile count (some shared, some app-only, some Gerlach-only)"
+    ]
+  }
+}
