@@ -24,6 +24,13 @@ SubSelves is a community-funded, open-source platform for Parts Work (IFS-inform
 
 ---
 
+## 📸 Screenshots
+
+### Landing Page
+![SubSelves Landing Page](screenshot-parts-work.png)
+
+---
+
 ## 🎨 Design Philosophy
 
 - **Brand palette**: Teal, Apricot, Golden, Periwinkle, Sage, Ivory, Ink
@@ -43,7 +50,7 @@ SubSelves is a community-funded, open-source platform for Parts Work (IFS-inform
 | Styling | Tailwind CSS 4 + custom brand palette |
 | Database | IndexedDB (local-first, via `idb`) |
 | Auth | Local-first email/password (PBKDF2) |
-| Hosting | Vercel (edge, serverless functions) |
+| Hosting | Netlify (edge, serverless functions) |
 | CI/CD | GitHub Actions (pnpm, TypeScript, ESLint, Build) |
 
 ---
