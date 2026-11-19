@@ -29,6 +29,9 @@ SubSelves is a community-funded, open-source platform for Parts Work (IFS-inform
 ### Landing Page
 ![SubSelves Landing Page](screenshot-parts-work.png)
 
+### Parts Library
+![SubSelves Parts Library](subselves-parts-pic.png)
+
 ---
 
 ## 🎨 Design Philosophy
