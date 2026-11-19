@@ -27,10 +27,10 @@ SubSelves is a community-funded, open-source platform for Parts Work (IFS-inform
 ## 📸 Screenshots
 
 ### Landing Page
-![SubSelves Landing Page](screenshot-parts-work.png)
+![SubSelves Landing Page](screenshots/screenshot-parts-work.png)
 
 ### Parts Library
-![SubSelves Parts Library](subselves-parts-pic.png)
+![SubSelves Parts Library](screenshots/subselves-parts-pic.png)
 
 ---
 
@@ -226,7 +226,9 @@ SubSelves is **community-funded** via [Open Collective](https://opencollective.c
 
 ## 📄 License
 
-MIT License — see [LICENSE](LICENSE) for details.
+CC BY-SA 4.0 — see [LICENSE](LICENSE) for details.
+
+[Creative Commons Attribution-ShareAlike 4.0 International](https://creativecommons.org/licenses/by-sa/4.0/deed.en)
 
 ---
 
