@@ -4,7 +4,7 @@ export function SponsorButton() {
   const tiers = [
     { label: 'Supporter', amount: 5, desc: "Covers one user's monthly hosting" },
     { label: 'Sustainer', amount: 25, desc: 'Funds a maintainer hour', featured: true },
-    { label: 'Patron', amount: 100, desc: 'Sponsors a new part illustration' },
+    { label: 'Patron', amount: 50, desc: 'Sponsors a new part illustration' },
   ];
 
   return (
@@ -17,7 +17,7 @@ export function SponsorButton() {
         {tiers.map(t => (
           <a
             key={t.amount}
-            href="https://opencollective.com/innerharmony"
+            href="https://opencollective.com/flourishcommons"
             target="_blank"
             rel="noopener noreferrer"
             className={`relative rounded-xl border p-4 text-center transition-colors ${
@@ -47,11 +47,11 @@ export function SponsorButton() {
       </div>
       <p className="mt-6 text-center text-xs text-ink/50">
         Or{' '}
-        <a href="https://opencollective.com/innerharmony" target="_blank" rel="noopener noreferrer" className="underline hover:text-teal">
+        <a href="https://opencollective.com/flourishcommons" target="_blank" rel="noopener noreferrer" className="underline hover:text-teal">
           one-time donation
         </a>{' '}
         •{' '}
-        <a href="https://github.com/sponsors/innerharmony" target="_blank" rel="noopener noreferrer" className="underline hover:text-teal">
+        <a href="https://github.com/sponsors/flourishcommons" target="_blank" rel="noopener noreferrer" className="underline hover:text-teal">
           GitHub Sponsors
         </a>
       </p>

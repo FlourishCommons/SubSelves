@@ -5,6 +5,7 @@ import PartsLibraryDemo from "@/components/PartsLibraryDemo";
 import { SponsorButton } from "@/components/SponsorButton";
 import { SponsorWall } from "@/components/SponsorWall";
 import { Footer } from "@/components/Footer";
+import { LibraryIcon, ChatIcon, SaveIcon, HarmonyIcon, ArrowIcon, SageIcon, CommunityIcon, CostsIcon } from "@/components/Icons";
 
 const features = [
   {
@@ -410,95 +411,5 @@ function BrandMark() {
         className="h-full w-full rounded-full object-cover"
       />
     </span>
-  );
-}
-
-function LibraryIcon() {
-  return (
-    <svg
-      aria-hidden="true"
-      viewBox="0 0 24 24"
-      className="h-6 w-6"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth={1.6}
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    >
-      <path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v15H6.5A2.5 2.5 0 0 0 4 20.5v-15Z" />
-      <path d="M4 20.5A2.5 2.5 0 0 1 6.5 18H20" />
-      <path d="M8 7h8M8 10h5" />
-    </svg>
-  );
-}
-
-function ChatIcon() {
-  return (
-    <svg
-      aria-hidden="true"
-      viewBox="0 0 24 24"
-      className="h-6 w-6"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth={1.6}
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    >
-      <path d="M4 5.5A2.5 2.5 0 0 1 6.5 3h7A2.5 2.5 0 0 1 16 5.5v4A2.5 2.5 0 0 1 13.5 12H9l-5 4V5.5Z" />
-      <path d="M18 8.5h.5A2.5 2.5 0 0 1 21 11v7l-4-3h-3.5A2.5 2.5 0 0 1 11 12.5" />
-    </svg>
-  );
-}
-
-function SaveIcon() {
-  return (
-    <svg
-      aria-hidden="true"
-      viewBox="0 0 24 24"
-      className="h-6 w-6"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth={1.6}
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    >
-      <path d="M6 3h12a1 1 0 0 1 1 1v17l-7-4-7 4V4a1 1 0 0 1 1-1Z" />
-      <path d="M9 7h6" />
-    </svg>
-  );
-}
-
-function HarmonyIcon() {
-  return (
-    <svg
-      aria-hidden="true"
-      viewBox="0 0 24 24"
-      className="h-6 w-6"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth={1.6}
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    >
-      <path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10Z" />
-      <path d="M8.5 11.5c1 .8 2.2 1.2 3.5 1.2s2.5-.4 3.5-1.2" />
-    </svg>
-  );
-}
-
-function ArrowIcon() {
-  return (
-    <svg
-      aria-hidden="true"
-      viewBox="0 0 20 20"
-      className="h-4 w-4 transition-transform group-hover:translate-x-0.5"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth={1.8}
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    >
-      <path d="M4 10h12M11 5l5 5-5 5" />
-    </svg>
   );
 }

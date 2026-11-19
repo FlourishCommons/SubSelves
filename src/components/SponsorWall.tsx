@@ -7,7 +7,7 @@ export function SponsorWall() {
 
   useEffect(() => {
     let mounted = true;
-    fetch('https://opencollective.com/innerharmony/members/all.json')
+    fetch('https://opencollective.com/flourishcommons/members/all.json')
       .then(r => r.json())
       .then(data => {
         if (mounted) {
