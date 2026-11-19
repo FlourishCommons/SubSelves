@@ -251,7 +251,7 @@ export default function PartsPage() {
             href="/parts/library"
             className="rounded-lg border border-teal/30 bg-white px-4 py-2 text-sm font-semibold text-teal-deep transition-colors hover:border-teal hover:bg-teal-tint"
           >
-            Browse artwork
+            Browse library
           </Link>
           <button
             onClick={() => setShowForm(true)}

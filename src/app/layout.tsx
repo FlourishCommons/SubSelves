@@ -17,26 +17,26 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "InnerHarmony",
+  title: "SubSelves",
   description: "Free, community-funded Parts Work for intergenerational healing. No ads, no tracking, open source.",
   openGraph: {
-    title: "InnerHarmony — Free Parts Work for Everyone",
+    title: "SubSelves — Free Parts Work for Everyone",
     description: "Community-funded, open-source IFS tools. No ads, no tracking.",
     type: "website",
     locale: "en_US",
-    siteName: "InnerHarmony",
+    siteName: "SubSelves",
     images: [
       {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "InnerHarmony — Free Parts Work for Everyone",
+        alt: "SubSelves — Free Parts Work for Everyone",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "InnerHarmony — Free Parts Work for Everyone",
+    title: "SubSelves — Free Parts Work for Everyone",
     description: "Community-funded, open-source IFS tools. No ads, no tracking.",
     images: ["/og-image.png"],
   },

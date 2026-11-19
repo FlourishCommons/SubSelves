@@ -1,4 +1,4 @@
-// Body region SVG paths and metadata for InnerHarmony.
+// Body region SVG paths and metadata for SubSelves.
 // All paths use the same 500 x 600 coordinate system.
 // Render with <svg viewBox="0 0 500 600">.
 

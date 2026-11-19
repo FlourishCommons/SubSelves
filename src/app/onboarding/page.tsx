@@ -11,7 +11,7 @@ export default function Onboarding() {
   const [step, setStep] = useState(0);
 
   const steps = [
-    { title: 'Welcome', desc: 'InnerHarmony helps you explore your inner system of parts — Guiding Voices, Protective Voices, and Young Voices — with curiosity and compassion.' },
+    { title: 'Welcome', desc: 'SubSelves helps you explore your inner system of parts — Guiding Voices, Protective Voices, and Young Voices — with curiosity and compassion.' },
     { title: 'How It Works', desc: 'Daily check-ins track mood and active parts. Guided sessions help you dialogue with parts. Journaling captures insights. Practices build Inner Leader energy.' },
     { title: 'Not Therapy', desc: 'This is an educational self-exploration companion. It does not replace professional mental health care. See Safety in Learn for crisis resources.' },
     { title: 'Your Name', desc: 'What would you like us to call you? (Optional)' },
@@ -38,7 +38,7 @@ export default function Onboarding() {
   return (
     <main className="flex-1 p-6 max-w-xl mx-auto w-full">
       <div className="text-center mb-8">
-        <h1 className="text-3xl font-bold">InnerHarmony</h1>
+        <h1 className="text-3xl font-bold">SubSelves</h1>
         <p className="text-ink/65 mt-2">A parts-based self-exploration companion</p>
       </div>
 

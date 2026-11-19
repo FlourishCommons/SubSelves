@@ -200,7 +200,7 @@ export default function PartsLibraryPage() {
                 </div>
 
                 <div className="mt-6 grid gap-4 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
-                  {parts.map((part) => {
+{parts.map((part, index) => {
                     const art = getPartArt(part.name, part.group);
                     if (!art) return null;
 
@@ -209,9 +209,9 @@ export default function PartsLibraryPage() {
                         key={`${part.group}-${part.name}`}
                         className={`group flex flex-col overflow-hidden rounded-2xl border bg-white shadow-sm shadow-teal/5 transition-shadow hover:shadow-md hover:shadow-teal/10 ${styles.border}`}
                       >
-                        <div className="relative aspect-square overflow-hidden bg-ivory [container-type:inline-size]">
+                        <div className="relative aspect-square overflow-hidden bg-ivory">
                           <div
-                            className={`absolute inset-[4%] rounded-full border-[1.5625cqw] bg-ivory p-[0.2cqw] ${styles.ring}`}
+                            className={`absolute inset-[4%] rounded-full border-[0.078125cqw] bg-ivory p-[0.05cqw] ${styles.ring}`}
                           >
                             <div className="relative h-full w-full overflow-hidden rounded-full bg-ivory">
                               <Image
@@ -233,9 +233,6 @@ export default function PartsLibraryPage() {
                           <h3 className="text-base font-semibold leading-snug text-ink">
                             {part.name}
                           </h3>
-                          <p className="mt-2 line-clamp-3 text-sm leading-6 text-ink/60">
-                            {art.scene}
-                          </p>
                           <Link
                             href={`/parts?add=${encodeURIComponent(part.name)}&group=${part.group}`}
                             className="mt-auto pt-4 text-sm font-semibold text-teal-deep underline decoration-teal/30 underline-offset-4 hover:text-teal"

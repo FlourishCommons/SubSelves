@@ -14,7 +14,7 @@ export function Footer() {
           <a href="/community" className="hover:text-teal">Contribute</a>
         </nav>
         <p className="mt-6 text-center text-xs text-ink/40">
-          InnerHarmony is free forever.{' '}
+          SubSelves is free forever.{' '}
           <a href="https://opencollective.com/innerharmony" target="_blank" rel="noopener noreferrer" className="underline hover:text-teal">
             Help keep it that way.
           </a>

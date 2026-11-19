@@ -11,7 +11,7 @@ export default function DonatePage() {
           Support our collective
         </h1>
         <p className="mt-4 text-base leading-7 text-ink/65">
-          Your support helps keep InnerHarmony accessible for people doing the
+          Your support helps keep SubSelves accessible for people doing the
           quiet, generational work of healing. Secure donation options are on
           their way.
         </p>

@@ -331,14 +331,10 @@ Large, low-opacity color fields; gentle blur; overlapping translucent shapes; su
 # 11. BRAND PERSONALITY & VALUES
 
 **Mission Statement**
-To give every person a gentle, structured way to meet their parts, understand what they carry, and choose a new response—so inherited cycles can become conscious choices.
+To give everyone a gentle, structured way to meet their parts, understand what they carry, and choose a new response.
 
 **Core Values**
-- Every part belongs.
-- Curiosity before combat.
-- Clarity through compassion.
-- Paced, not pushed.
-- Accessible and non-clinical.
+- 
 
 **Brand Attributes (3–5 words)**
 Warm · Steady · Alive · Curious · Grounded
@@ -348,16 +344,17 @@ Warm · Steady · Alive · Curious · Grounded
 # 12. INSPIRATION & REFERENCES
 
 **Brands You Admire**
-Calm, Headspace, and thoughtful journaling tools—for their unhurried pacing and humane tone.
-
+- not sure yet
 **What You Like About Them**
-Soft, spacious layouts; plain-language guidance; gentle color; product experiences that respect the user's pace.
 
 **Competitor Brands**
-General meditation apps, therapy platforms, and habit trackers.
 
 **What to Avoid**
-Clinical blue-and-white healthcare aesthetics; gamified streak pressure; high-saturation gradients; dark navy headers; muted all-purple layouts; any visual language that sorts parts into good and bad.
+- Clinical blue-and-white healthcare aesthetics; 
+- gamified streak pressure; 
+- high-saturation gradients;
+-  dark navy headers; muted all-purple layouts; 
+-  any visual language that sorts parts into good and bad.
 
 ---
 
@@ -365,8 +362,8 @@ Clinical blue-and-white healthcare aesthetics; gamified streak pressure; high-sa
 
 **Accessibility Needs**
 
-- [x] High contrast
-- [x] Color-blind considerations
+- [ny] High contrast
+- [ny] Color-blind considerations
 - [ ] Other:
 
 **Requirements:**

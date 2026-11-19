@@ -42,7 +42,7 @@ export default function RegisterPage() {
         <div className="text-center mb-8">
           <h1 className="text-3xl font-bold">Create your account</h1>
           <p className="text-ink/65 mt-2">
-            Set up a private, local account for your InnerHarmony journey.
+            Set up a private, local account for your SubSelves journey.
           </p>
         </div>
 

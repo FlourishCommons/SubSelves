@@ -10,12 +10,20 @@ import {
   bodySignalsRepo,
   havenRepo,
   practiceProgressRepo,
+  sharedPartsRepo,
+  followsRepo,
+  heartsRepo,
+  commentsRepo,
+  activitiesRepo,
+  notificationsRepo,
+  shareRequestsRepo,
+  communityPartsRepo,
 } from './db';
-import type { Part, CheckIn, JournalEntry, PracticeSession, AssessmentResult, UserSettings, TrustTrial, CouncilMeeting, BodySignal, SafeHaven, PracticeProgress } from '@/lib/types';
+import type { Part, CheckIn, JournalEntry, PracticeSession, AssessmentResult, UserSettings, TrustTrial, CouncilMeeting, BodySignal, SafeHaven, PracticeProgress, SharedPart, Follow, Heart, Comment, Activity, Notification, ShareRequest, CommunityPart } from '@/lib/types';
 
 export interface BackupData {
-  app: 'innerharmony';
-  version: 2;
+  app: 'subselves';
+  version: 3;
   exportedAt: string;
   data: {
     parts: Part[];
@@ -29,6 +37,14 @@ export interface BackupData {
     bodySignals: BodySignal[];
     haven: SafeHaven[];
     practiceProgress: PracticeProgress[];
+    sharedParts: SharedPart[];
+    follows: Follow[];
+    hearts: Heart[];
+    comments: Comment[];
+    activities: Activity[];
+    notifications: Notification[];
+    shareRequests: ShareRequest[];
+    communityParts: CommunityPart[];
   };
 }
 
@@ -55,6 +71,14 @@ const STORES: StoreConfig<StoreKey>[] = [
   { name: 'bodySignals', repo: bodySignalsRepo },
   { name: 'haven', repo: havenRepo },
   { name: 'practiceProgress', repo: practiceProgressRepo },
+  { name: 'sharedParts', repo: sharedPartsRepo },
+  { name: 'follows', repo: followsRepo },
+  { name: 'hearts', repo: heartsRepo },
+  { name: 'comments', repo: commentsRepo },
+  { name: 'activities', repo: activitiesRepo },
+  { name: 'notifications', repo: notificationsRepo },
+  { name: 'shareRequests', repo: shareRequestsRepo },
+  { name: 'communityParts', repo: communityPartsRepo },
 ];
 
 export async function exportBackup(): Promise<BackupData> {
@@ -70,6 +94,14 @@ export async function exportBackup(): Promise<BackupData> {
     bodySignals: [] as BodySignal[],
     haven: [] as SafeHaven[],
     practiceProgress: [] as PracticeProgress[],
+    sharedParts: [] as SharedPart[],
+    follows: [] as Follow[],
+    hearts: [] as Heart[],
+    comments: [] as Comment[],
+    activities: [] as Activity[],
+    notifications: [] as Notification[],
+    shareRequests: [] as ShareRequest[],
+    communityParts: [] as CommunityPart[],
   };
 
   for (const store of STORES) {
@@ -77,8 +109,8 @@ export async function exportBackup(): Promise<BackupData> {
   }
 
   return {
-    app: 'innerharmony',
-    version: 2,
+    app: 'subselves',
+    version: 3,
     exportedAt: new Date().toISOString(),
     data,
   };
@@ -90,7 +122,7 @@ export function downloadBackup(backup: BackupData): void {
   const a = document.createElement('a');
   a.href = url;
   const dateStr = new Date(backup.exportedAt).toISOString().split('T')[0];
-  a.download = `innerharmony-backup-${dateStr}.json`;
+  a.download = `subselves-backup-${dateStr}.json`;
   document.body.appendChild(a);
   a.click();
   document.body.removeChild(a);
@@ -100,14 +132,12 @@ export function downloadBackup(backup: BackupData): void {
 function isBackupData(backup: unknown): backup is BackupData {
   if (!backup || typeof backup !== 'object') return false;
   const b = backup as Record<string, unknown>;
-  if (b.app !== 'innerharmony') return false;
-  if (b.version !== 1 && b.version !== 2) return false;
+  if (b.app !== 'subselves') return false;
+  if (b.version !== 1 && b.version !== 2 && b.version !== 3) return false;
   if (typeof b.exportedAt !== 'string') return false;
   if (!b.data || typeof b.data !== 'object') return false;
   const data = b.data as Record<string, unknown>;
   for (const store of STORES) {
-    // Allow practiceProgress to be absent for v1 backups
-    if (store.name === 'practiceProgress' && b.version === 1) continue;
     if (!Array.isArray(data[store.name])) return false;
   }
   return true;

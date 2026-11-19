@@ -166,7 +166,7 @@ export default function PartsLibraryDemo() {
               </p>
 
               <ul className="mt-3 flex flex-wrap gap-2">
-                {parts.map((part) => {
+                {parts.slice(0, 20).map((part) => {
                   const art = getPartArt(part.name, part.group);
 
                   return (

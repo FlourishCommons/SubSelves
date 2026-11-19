@@ -57,7 +57,7 @@ export default function SettingsPage() {
       try {
         const json = JSON.parse(event.target?.result as string);
         if (!validateBackup(json)) {
-          setError('Invalid backup file: not an InnerHarmony backup or wrong version');
+          setError('Invalid backup file: not an SubSelves backup or wrong version');
           return;
         }
         setPendingBackup(json);

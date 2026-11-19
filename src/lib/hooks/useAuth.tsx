@@ -13,7 +13,7 @@ import { usersRepo } from '@/lib/storage/db';
 import { hashPassword, verifyPassword } from '@/lib/auth/password';
 import type { PublicUser, User } from '@/lib/types';
 
-const SESSION_KEY = 'innerharmony.currentUserId';
+const SESSION_KEY = 'subselves.currentUserId';
 const MIN_PASSWORD_LENGTH = 8;
 const EMAIL_PATTERN = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 

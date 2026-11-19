@@ -1,7 +1,7 @@
 import { openDB, DBSchema, IDBPDatabase } from 'idb';
-import type { Part, CheckIn, JournalEntry, PracticeSession, AssessmentResult, UserSettings, TrustTrial, CouncilMeeting, BodySignal, SafeHaven, PartGroup, PracticeProgress, User } from '@/lib/types';
+import type { Part, CheckIn, JournalEntry, PracticeSession, AssessmentResult, UserSettings, TrustTrial, CouncilMeeting, BodySignal, SafeHaven, PartGroup, PracticeProgress, User, SharedPart, Follow, Heart, Comment, Activity, Notification, ShareRequest, CommunityPart, UserProfile, UserStats } from '@/lib/types';
 
-interface InnerHarmonyDB extends DBSchema {
+interface SubSelvesDB extends DBSchema {
   parts: { key: string; value: Part; indexes: { 'by-group': PartGroup } };
   checkIns: { key: string; value: CheckIn; indexes: { 'by-date': string } };
   journal: { key: string; value: JournalEntry; indexes: { 'by-part': string; 'by-date': string } };
@@ -14,14 +14,22 @@ interface InnerHarmonyDB extends DBSchema {
   haven: { key: string; value: SafeHaven };
   practiceProgress: { key: string; value: PracticeProgress };
   users: { key: string; value: User; indexes: { 'by-email': string } };
+  sharedParts: { key: string; value: SharedPart; indexes: { 'by-ownerId': string; 'by-visibility': string } };
+  follows: { key: string; value: Follow; indexes: { 'by-followerId': string; 'by-followingId': string } };
+  hearts: { key: string; value: Heart; indexes: { 'by-targetId': string; 'by-userId': string } };
+  comments: { key: string; value: Comment; indexes: { 'by-sharedPartId': string; 'by-userId': string } };
+  activities: { key: string; value: Activity; indexes: { 'by-userId': string; 'by-createdAt': string } };
+  notifications: { key: string; value: Notification; indexes: { 'by-userId': string; 'by-read': string } };
+  shareRequests: { key: string; value: ShareRequest; indexes: { 'by-fromUserId': string; 'by-toUserId': string; 'by-status': string } };
+  communityParts: { key: string; value: CommunityPart; indexes: { 'by-curatorId': string; 'by-featured': string } };
 }
 
-type StoreName = 'parts' | 'checkIns' | 'journal' | 'practice' | 'assessments' | 'settings' | 'trustTrials' | 'councils' | 'bodySignals' | 'haven' | 'practiceProgress' | 'users';
+type StoreName = 'parts' | 'checkIns' | 'journal' | 'practice' | 'assessments' | 'settings' | 'trustTrials' | 'councils' | 'bodySignals' | 'haven' | 'practiceProgress' | 'users' | 'sharedParts' | 'follows' | 'hearts' | 'comments' | 'activities' | 'notifications' | 'shareRequests' | 'communityParts';
 
-type StoreValue<S extends StoreName> = InnerHarmonyDB[S]['value'];
+type StoreValue<S extends StoreName> = SubSelvesDB[S]['value'];
 
-const DB_NAME = 'innerharmony';
-const DB_VERSION = 4;
+const DB_NAME = 'subselves';
+const DB_VERSION = 5;
 
 /**
  * Declarative schema: every store that must exist at the current DB_VERSION,
@@ -41,9 +49,17 @@ const STORE_SCHEMA: Array<{ name: StoreName; indexes: Array<[string, string]> }>
   { name: 'haven', indexes: [] },
   { name: 'practiceProgress', indexes: [] },
   { name: 'users', indexes: [['by-email', 'email']] },
+  { name: 'sharedParts', indexes: [['by-ownerId', 'ownerId'], ['by-visibility', 'visibility']] },
+  { name: 'follows', indexes: [['by-followerId', 'followerId'], ['by-followingId', 'followingId']] },
+  { name: 'hearts', indexes: [['by-targetId', 'targetId'], ['by-userId', 'userId']] },
+  { name: 'comments', indexes: [['by-sharedPartId', 'sharedPartId'], ['by-userId', 'userId']] },
+  { name: 'activities', indexes: [['by-userId', 'userId'], ['by-createdAt', 'createdAt']] },
+  { name: 'notifications', indexes: [['by-userId', 'userId'], ['by-read', 'read']] },
+  { name: 'shareRequests', indexes: [['by-fromUserId', 'fromUserId'], ['by-toUserId', 'toUserId'], ['by-status', 'status']] },
+  { name: 'communityParts', indexes: [['by-curatorId', 'curatorId'], ['by-featured', 'featured']] },
 ];
 
-let dbPromise: Promise<IDBPDatabase<InnerHarmonyDB>> | null = null;
+let dbPromise: Promise<IDBPDatabase<SubSelvesDB>> | null = null;
 
 /**
  * Ensure every store/index from STORE_SCHEMA exists.
@@ -54,7 +70,7 @@ let dbPromise: Promise<IDBPDatabase<InnerHarmonyDB>> | null = null;
  * versionchange transaction is active and would abort the whole upgrade,
  * surfacing as an `AbortError`).
  */
-function ensureSchema(db: IDBPDatabase<InnerHarmonyDB>) {
+function ensureSchema(db: IDBPDatabase<SubSelvesDB>) {
   // Use the raw IndexedDB API here: store/index names are dynamic, and this
   // keeps the callback free of idb's per-store generic typing. It stays
   // synchronous and only creates what is missing, so it can never throw.
@@ -77,7 +93,7 @@ function ensureSchema(db: IDBPDatabase<InnerHarmonyDB>) {
  * and no `group`. Convert them to the current taxonomy. Idempotent: only
  * records that still have `category` and no `group` are touched.
  */
-async function runMigrations(db: IDBPDatabase<InnerHarmonyDB>): Promise<void> {
+async function runMigrations(db: IDBPDatabase<SubSelvesDB>): Promise<void> {
   const tx = db.transaction('parts', 'readwrite');
   let cursor = await tx.store.openCursor();
   while (cursor) {
@@ -102,12 +118,12 @@ async function runMigrations(db: IDBPDatabase<InnerHarmonyDB>): Promise<void> {
   await tx.done;
 }
 
-function getDB(): Promise<IDBPDatabase<InnerHarmonyDB>> {
+export function getDB(): Promise<IDBPDatabase<SubSelvesDB>> {
   if (typeof window === 'undefined') {
     return Promise.reject(new Error('IndexedDB not available on server'));
   }
   if (!dbPromise) {
-    const opened = openDB<InnerHarmonyDB>(DB_NAME, DB_VERSION, {
+    const opened = openDB<SubSelvesDB>(DB_NAME, DB_VERSION, {
       upgrade(db) {
         ensureSchema(db);
       },
@@ -186,6 +202,14 @@ export const bodySignalsRepo = createRepo('bodySignals');
 export const havenRepo = createRepo('haven');
 export const practiceProgressRepo = createRepo('practiceProgress');
 export const usersRepo = createRepo('users');
+export const sharedPartsRepo = createRepo('sharedParts');
+export const followsRepo = createRepo('follows');
+export const heartsRepo = createRepo('hearts');
+export const commentsRepo = createRepo('comments');
+export const activitiesRepo = createRepo('activities');
+export const notificationsRepo = createRepo('notifications');
+export const shareRequestsRepo = createRepo('shareRequests');
+export const communityPartsRepo = createRepo('communityParts');
 
 export async function seedIfNeeded(): Promise<void> {
   if (typeof window === 'undefined') return;
@@ -197,4 +221,42 @@ export async function seedIfNeeded(): Promise<void> {
   } catch {
     // Ignore errors during seeding
   }
+}
+
+/**
+ * Clear all data (for testing or account deletion).
+ */
+export async function clearAllData(): Promise<void> {
+  if (typeof window === 'undefined') return;
+  const db = await getDB();
+  const tx = db.transaction([
+    'parts', 'checkIns', 'journal', 'practice', 'assessments',
+    'trustTrials', 'councils', 'bodySignals', 'haven', 'practiceProgress',
+    'sharedParts', 'follows', 'hearts', 'comments', 'activities',
+    'notifications', 'shareRequests', 'communityParts',
+    'settings', 'users'
+  ], 'readwrite');
+  await Promise.all([
+    tx.objectStore('parts').clear(),
+    tx.objectStore('checkIns').clear(),
+    tx.objectStore('journal').clear(),
+    tx.objectStore('practice').clear(),
+    tx.objectStore('assessments').clear(),
+    tx.objectStore('trustTrials').clear(),
+    tx.objectStore('councils').clear(),
+    tx.objectStore('bodySignals').clear(),
+    tx.objectStore('haven').clear(),
+    tx.objectStore('practiceProgress').clear(),
+    tx.objectStore('sharedParts').clear(),
+    tx.objectStore('follows').clear(),
+    tx.objectStore('hearts').clear(),
+    tx.objectStore('comments').clear(),
+    tx.objectStore('activities').clear(),
+    tx.objectStore('notifications').clear(),
+    tx.objectStore('shareRequests').clear(),
+    tx.objectStore('communityParts').clear(),
+    tx.objectStore('settings').clear(),
+    tx.objectStore('users').clear(),
+  ]);
+  await tx.done;
 }

@@ -47,7 +47,7 @@ const regionColors = {
 };
 
 
-// Original InnerHarmony line icons: restrained, rounded geometry and brand-only colors.
+// Original SubSelves line icons: restrained, rounded geometry and brand-only colors.
 // Decorative icons never use emoji, red, or external icon assets.
 const partIconPalettes = [
   { stroke: '#1B524F', background: '#E3EFED' },

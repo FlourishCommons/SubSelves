@@ -9,7 +9,7 @@ export function SponsorButton() {
 
   return (
     <div className="rounded-2xl border border-ink/10 bg-white p-6 sm:p-8">
-      <h3 className="text-lg font-semibold text-center">Keep InnerHarmony free for everyone</h3>
+      <h3 className="text-lg font-semibold text-center">Keep SubSelves free for everyone</h3>
       <p className="mt-2 text-sm text-ink/60 text-center">
         Community-funded • No ads • No tracking • Open source
       </p>

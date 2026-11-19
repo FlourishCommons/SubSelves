@@ -4,6 +4,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import { useAuth } from '@/lib/hooks/useAuth';
+import { UserMenu } from './UserMenu';
 
 const navItems = [
   { href: '/', label: 'Dashboard' },
@@ -40,14 +41,16 @@ export function TopNav() {
             <Link
               href="/"
               className="flex items-center gap-2 px-3 py-2 rounded-lg transition-colors"
-              aria-label="InnerHarmony Home"
+              aria-label="SubSelves Home"
             >
               <Image
                 src="/logo.png"
-                alt="InnerHarmony"
-                width={28}
-                height={28}
-                className="h-7 w-7 rounded-full object-cover"
+                alt="SubSelves"
+                width={168}
+                height={56}
+                className="h-14 w-42 object-contain"
+                priority
+                unoptimized
               />
             </Link>
             {user ? (
@@ -71,7 +74,7 @@ export function TopNav() {
               })
             ) : (
               <Link href="/" className="px-3 py-2 rounded-lg text-base font-semibold text-ink whitespace-nowrap">
-                InnerHarmony
+                SubSelves
               </Link>
             )}
           </div>
@@ -92,34 +95,9 @@ export function TopNav() {
                 </Link>
               </>
             )}
-            {user && (
-              <>
-                <Link
-                  href="/account"
-                  className="max-w-32 truncate px-3 py-2 rounded-lg text-sm text-ink/65 hover:text-ink hover:bg-teal-tint/60 transition-colors"
-                  aria-label="Account settings"
-                >
-                  {user.displayName}
-                </Link>
-                <button
-                  type="button"
-                  onClick={() => logout()}
-                  className="px-3 py-2 rounded-lg text-sm text-ink/65 hover:text-ink hover:bg-teal-tint/60 transition-colors whitespace-nowrap"
-                >
-                  Log out
-                </button>
-                <Link
-                  href="/settings"
-                  className="flex items-center justify-center px-3 py-2 rounded-lg text-ink/65 hover:text-ink hover:bg-teal-tint/60 transition-colors whitespace-nowrap"
-                  aria-label="Settings"
-                >
-                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-                  </svg>
-                </Link>
-              </>
-            )}
+            {user ? (
+              <UserMenu user={user} onLogout={logout} onClose={() => {}} />
+            ) : null}
           </div>
         </div>
       </div>

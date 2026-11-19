@@ -40,10 +40,10 @@ export default function LearnPage() {
         <h2 id="safety-heading" className="text-lg font-semibold">Safety & Attribution</h2>
         <div className="bg-white rounded-xl border border-ink/10 p-4 space-y-3 text-sm">
           <p className="text-ink/65">
-            InnerHarmony is an educational self-exploration companion, not therapy. It does not provide diagnosis, treatment, or clinical advice.
+            SubSelves is an educational self-exploration companion, not therapy. It does not provide diagnosis, treatment, or clinical advice.
           </p>
           <p className="text-ink/65">
-            Draws on parts-work and inner-leadership traditions. InnerHarmony is independent and is not affiliated with or endorsed by any therapy method or institute.
+            Draws on parts-work and inner-leadership traditions. SubSelves is independent and is not affiliated with or endorsed by any therapy method or institute.
           </p>
           <Link href="/learn/safety" className="text-teal-deep hover:underline">
             View crisis resources & full disclaimer →

@@ -1,5 +1,5 @@
 // ───────────────────────────────────────────────────────────────────────────
-// InnerHarmony — core domain types
+// SubSelves — core domain types
 //
 // Taxonomy is theory-faithful (see docs/theory/theory-mapping.md §3):
 //   Groups: manager (Guiding Voices) | guardian (Protective Voices)
@@ -16,6 +16,13 @@ export type PartStatus =
   | 'trusting'
   | 'retrained'
   | 'reassigned';
+
+/** A sensation selected for a specific body region on a part. */
+export interface SelectedSensation {
+  sensationId: string;
+  intensity: number;
+  bodyRegionId: string;
+}
 
 export interface Part {
   id: string;
@@ -57,6 +64,9 @@ export interface Part {
   notes?: string;
   createdAt: string;
   updatedAt?: string;
+
+  /** Mapped body sensations for this part (from BodyAwareness). */
+  bodySensations?: SelectedSensation[];
 
   // Interview profile fields (all optional, additive)
   /** Its message or complaint */
@@ -247,3 +257,185 @@ export interface User {
 
 /** Safe account shape for UI/state: excludes the password hash. */
 export type PublicUser = Omit<User, 'passwordHash'>;
+
+/* ════════════════════════════════════════════════════════════════════════
+ * SOCIAL / COLLABORATIVE TYPES
+ * ═══════════════════════════════════════════════════════════════════════ */
+
+/** Extended public profile for social features. */
+export interface UserProfile extends PublicUser {
+  /** Short bio shown on profile and when sharing parts. */
+  bio?: string;
+  /** Avatar image (URL or base64). */
+  avatar?: string;
+  /** Whether profile is public (discoverable in community). */
+  publicProfile?: boolean;
+  /** Settings for who can see shared parts. */
+  sharingSettings?: SharingSettings;
+  /** Counts for social UI. */
+  stats?: UserStats;
+}
+
+/** Who can share parts with this user / who can discover their shares. */
+export interface SharingSettings {
+  /** Who can share parts directly with me. */
+  receiveSharesFrom: 'anyone' | 'followers' | 'none';
+  /** Whether my shared parts appear in community library. */
+  allowPublicLibrary?: boolean;
+  /** Require approval before a shared part appears in my library. */
+  requireApproval?: boolean;
+}
+
+/** Aggregated counts for profile cards. */
+export interface UserStats {
+  partsCount: number;
+  sharedPartsCount: number;
+  followersCount: number;
+  followingCount: number;
+  heartsReceived: number;
+}
+
+/** A follow relationship between users. */
+export interface Follow {
+  id: string;
+  followerId: string;
+  followingId: string;
+  createdAt: string;
+}
+
+/** A reaction ("heart") on a shared part or comment. */
+export interface Heart {
+  id: string;
+  targetType: 'sharedPart' | 'comment';
+  targetId: string;
+  userId: string;
+  createdAt: string;
+}
+
+/** Comment on a shared part. */
+export interface Comment {
+  id: string;
+  sharedPartId: string;
+  userId: string;
+  body: string;
+  parentCommentId?: string; // for replies
+  createdAt: string;
+  updatedAt?: string;
+}
+
+/** A shared part — a user's part made visible to others. */
+export interface SharedPart {
+  id: string;
+  /** The original part ID (from owner's parts). */
+  sourcePartId: string;
+  /** Owner of the original part. */
+  ownerId: string;
+  /** Snapshot of the part at time of sharing (in case original changes). */
+  partSnapshot: Part;
+  /** Owner's optional note about why they're sharing. */
+  shareNote?: string;
+  /** Visibility: 'public' (community library) | 'followers' | 'private' (specific users). */
+  visibility: 'public' | 'followers' | 'private';
+  /** Specific user IDs this is shared with (if visibility === 'private'). */
+  sharedWithUserIds?: string[];
+  /** Whether the owner allows others to comment. */
+  allowComments?: boolean;
+  /** Whether the owner allows hearts. */
+  allowHearts?: boolean;
+  createdAt: string;
+  updatedAt?: string;
+  /** Aggregated counts (denormalized for fast reads). */
+  heartsCount?: number;
+  commentsCount?: number;
+}
+
+/** Activity feed item for the community feed. */
+export type ActivityType =
+  | 'shared_part'
+  | 'hearted_part'
+  | 'commented_part'
+  | 'followed_user'
+  | 'created_part';
+
+export interface Activity {
+  id: string;
+  userId: string;
+  type: ActivityType;
+  /** The primary entity this activity relates to. */
+  targetType: 'sharedPart' | 'user' | 'part';
+  targetId: string;
+  /** Optional metadata (e.g., comment preview, heart type). */
+  metadata?: Record<string, unknown>;
+  createdAt: string;
+}
+
+/** Notification for a user. */
+export type NotificationType =
+  | 'heart_received'
+  | 'comment_received'
+  | 'follow_received'
+  | 'share_request'
+  | 'share_approved'
+  | 'mention';
+
+export interface Notification {
+  id: string;
+  userId: string;
+  type: NotificationType;
+  actorId: string; // who triggered it
+  targetType: 'sharedPart' | 'comment' | 'user';
+  targetId: string;
+  read: boolean;
+  createdAt: string;
+}
+
+/** A request to share a part with a specific user (for private shares). */
+export interface ShareRequest {
+  id: string;
+  fromUserId: string;
+  toUserId: string;
+  sharedPartId: string;
+  status: 'pending' | 'accepted' | 'declined';
+  createdAt: string;
+  respondedAt?: string;
+}
+
+/** Community-curated part entry (approved for public library). */
+export interface CommunityPart {
+  id: string;
+  /** The shared part this entry is based on. */
+  sharedPartId: string;
+  /** Curator who added it to the library. */
+  curatorId: string;
+  /** Tags for discoverability. */
+  tags: string[];
+  /** Featured in "Parts of the Week" etc. */
+  featured?: boolean;
+  addedAt: string;
+}
+
+/* ═════════════════════════════════════════════════════════════════════════
+ * EXTENDED USER TYPE (replace User in db schema)
+ * ═══════════════════════════════════════════════════════════════════════ */
+
+/** A local-first account with social fields. The password is never stored in plain text. */
+export interface User {
+  id: string;
+  email: string;
+  /** PBKDF2 hash in the form `pbkdf2$iterations$salt$hash`. */
+  passwordHash: string;
+  displayName: string;
+  onboardingComplete: boolean;
+  createdAt: string;
+  updatedAt?: string;
+
+  // Social fields
+  /** Short bio shown on profile and when sharing parts. */
+  bio?: string;
+  /** Avatar image (URL or base64). */
+  avatar?: string;
+  /** Whether profile is public (discoverable in community). */
+  publicProfile?: boolean;
+  /** Settings for who can see shared parts. */
+  sharingSettings?: SharingSettings;
+}

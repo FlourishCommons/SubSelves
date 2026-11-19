@@ -117,7 +117,7 @@ export default function Home() {
               </h1>
 
               <p className="mt-6 max-w-xl text-lg leading-8 text-ink/70">
-                InnerHarmony is a gentle, guided space for Parts Work—so you can
+                SubSelves is a gentle, guided space for Parts Work—so you can
                 meet the parts shaped by inherited trauma, listen without
                 judgment, and build a steadier sense of inner peace.
               </p>
@@ -376,7 +376,7 @@ export default function Home() {
                     Support our collective
                   </h2>
                   <p className="mt-4 text-base leading-7 text-ivory/85">
-                    InnerHarmony is built for people doing the quiet,
+                    SubSelves is built for people doing the quiet,
                     generational work of healing. Your support helps keep these
                     tools accessible and lets us grow them with care.
                   </p>
@@ -404,7 +404,7 @@ function BrandMark() {
     <span className="flex h-9 w-9 items-center justify-center rounded-full">
       <Image
         src="/logo.png"
-        alt="InnerHarmony"
+        alt="SubSelves"
         width={36}
         height={36}
         className="h-full w-full rounded-full object-cover"
